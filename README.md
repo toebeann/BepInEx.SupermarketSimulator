@@ -24,7 +24,7 @@ In particular, this pack comes with
 
 ## Compatibility with MelonLoader
 
-This pack comes with BepInEx.MelonLoader.Loader, and as such should be compatible with most mods and plugins made for MelonLoader 0.5.7.
+This pack comes with [BepInEx.MelonLoader.Loader](https://github.com/BepInEx/BepInEx.MelonLoader.Loader), and as such should be compatible with most mods and plugins made for MelonLoader 0.5.7.
 
 To use BepInEx plugins/patcher together with MelonLoader mods/plugins, you should [uninstall MelonLoader (if applicable)](https://github.com/LavaGang/MelonLoader.Installer/blob/master/README.md#how-to-un-install-melonloader), then install this pack following [the instructions below](#installation).
 
