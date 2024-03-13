@@ -33,7 +33,7 @@ Then, simply follow [the below instructions for installing mods](#installing-mod
 ## Installation
 
 > [!TIP]\
-> The game folder is the folder containing the game's executable (e.g. `Supermarket Simulator.exe`). Steam users can easily find this folder by locating the game in your Steam library, right-clicking it and then selecting `Manage` -> `Browse local files`.
+> The game folder is the folder containing the game's executable (e.g. `Supermarket Simulator.exe`). Steam users can easily find this folder by locating the game in their Steam library, right-clicking it and then selecting `Manage` -> `Browse local files`.
 
 To install manually, follow these instructions:
 
@@ -53,7 +53,7 @@ To install manually, follow these instructions:
 ## Installing mods
 
 > [!NOTE]\
-> The paths in this section are relative to the game folder, i.e. `BepInEx/plugins` = `[game folder]/BepInEx/plugins`, where `[game folder]` is the path to the folder containing the game's executable (e.g. `Supermarket Simulator.exe`). Steam users can easily find this folder by locating the game in your Steam library, right-clicking it and then selecting `Manage` -> `Browse local files`.
+> The paths in this section are relative to the game folder, i.e. `BepInEx/plugins` = `[game folder]/BepInEx/plugins`, where `[game folder]` is the path to the folder containing the game's executable (e.g. `Supermarket Simulator.exe`). Steam users can easily find this folder by locating the game in their Steam library, right-clicking it and then selecting `Manage` -> `Browse local files`.
 
 **It is _strongly_ recommended to read and follow the instructions for each mod you download.**
 
