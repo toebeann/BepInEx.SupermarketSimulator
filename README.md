@@ -55,6 +55,9 @@ To install manually, follow these instructions:
 > [!NOTE]\
 > The paths in this section are relative to the game folder, i.e. `BepInEx/plugins` = `[game folder]/BepInEx/plugins`, where `[game folder]` is the path to the folder containing the game's executable (e.g. `Supermarket Simulator.exe`). Steam users can easily find this folder by locating the game in their Steam library, right-clicking it and then selecting `Manage` -> `Browse local files`.
 
+> [!TIP]\
+> "Extract the .zip" simply means take the contents of the .zip file and put them in the specified location. For example, if you are told to "extract the .zip" or "extract the contents of the archive" into `BepInEx/plugins`, then you can simply open the .zip archive by double-clicking on it, then selecting everything inside and dragging the contents into your `BepInEx/plugins` folder. Easy!
+
 **It is _strongly_ recommended to read and follow the instructions for each mod you download.**
 
 However, sometimes mod authors don't give good (or any) instructions, or you just can't be bothered. For those occasions, here's a simple reference:
@@ -70,7 +73,7 @@ However, sometimes mod authors don't give good (or any) instructions, or you jus
 
 ### Mod installation by .zip structure
 
-| Folder located in root of .zip | Where to extract .zip                     |
+| Folder located in root of .zip | Where to extract the .zip                     |
 | ------------------------------ | ----------------------------------------- |
 | `BepInEx`                      | Directly in the game folder               |
 | `MLLoader`                     | Directly in the game folder               |
@@ -84,7 +87,7 @@ However, sometimes mod authors don't give good (or any) instructions, or you jus
 > [!TIP]\
 > On Nexus mod pages, you can usually see a mod's requirements by expanding the `Requirements` near the top of the description tab. Otherwise, read the mod's description.
 
-| Listed in requirements                 | Mentioned somewhere on the page | Where to extract .zip                                                                                                                                          |
+| Listed in requirements                 | Mentioned somewhere on the page | Where to extract the .zip                                                                                                                                          |
 | -------------------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | BepInEx (especially this BepInEx pack) | MelonLoader                     | Probably `MLLoader/Mods`, maybe `MLLoader/Plugins`. Use common sense and refer to [the .zip structure](#mod-installation-by-zip-structure) if you're unsure.   |
 | BepInEx / this BepInEx pack            |                                 | Probably `BepInEx/plugins`, maybe `BepInEx/patchers`. Use common sense and refer to [the .zip structure](#mod-installation-by-zip-structure) if you're unsure. |
