@@ -39,8 +39,8 @@ To install manually, follow these instructions:
 
 1. [Download Tobey's BepInEx Pack for Supermarket Simulator](https://github.com/toebeann/BepInEx.SupermarketSimulator/releases/latest/download/BepInEx.zip).
 1. Extract the contents of the downloaded archive into the game folder.\
-   _(that just means open the .zip file and drag the files and folders out into the game folder!)_
-1. **Linux (SteamOS etc.) only:** In Steam, go the game's properties and set the launch arguments to:
+   **ℹ️** _That just means open the .zip file and drag the files and folders out into the game folder!_
+1. **Linux (SteamOS etc.) only:** In your Steam library, right-click the game, select `Properties...` and set the launch arguments to:
     ```
     WINEDLLOVERRIDES="winhttp=n,b" %command%
     ```
