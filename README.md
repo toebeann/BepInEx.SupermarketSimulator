@@ -82,7 +82,7 @@ However, sometimes mod authors don't give good (or any) instructions, or you jus
 ### Mod installation by requirements
 
 > [!TIP]\
-> On Nexus mod pages, you can usually see a mod's requirements by expanding the `Requirements` near the top of the description tab. Otherwise, read the description.
+> On Nexus mod pages, you can usually see a mod's requirements by expanding the `Requirements` near the top of the description tab. Otherwise, read the mod's description.
 
 | Listed in requirements                 | Mentioned somewhere on the page | Where to extract .zip                                                                                                                                          |
 | -------------------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
