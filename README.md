@@ -104,7 +104,7 @@ First, double check that there isn't instructions on the mod page, and if there 
 
 ## Issues, questions, etc.
 
-First, please make sure to check the answer you're looking for isn't already somewhere on this page. Use Ctrl+F to search for keywords.
+First, please make sure to check that the answer you're looking for isn't already somewhere on this page. Use Ctrl+F to search for keywords.
 
 Second, check [the FAQ](https://github.com/toebeann/BepInEx.SupermarketSimulator/wiki/FAQ) to see if there is an answer there.
 
