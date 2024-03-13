@@ -89,11 +89,11 @@ However, sometimes mod authors don't give good (or any) instructions, or you jus
 
 | Listed in requirements                 | Mentioned somewhere on the page | Where to extract the .zip                                                                                                                                          |
 | -------------------------------------- | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| BepInEx (especially this BepInEx pack) | MelonLoader                     | Probably `MLLoader/Mods`, maybe `MLLoader/Plugins`. Use common sense and refer to [the .zip structure](#mod-installation-by-zip-structure) if you're unsure.   |
-| BepInEx / this BepInEx pack            |                                 | Probably `BepInEx/plugins`, maybe `BepInEx/patchers`. Use common sense and refer to [the .zip structure](#mod-installation-by-zip-structure) if you're unsure. |
-|                                        | BepInEx                         | Probably `BepInEx/plugins`, maybe `BepInEx/patchers`. Use common sense and refer to [the .zip structure](#mod-installation-by-zip-structure) if you're unsure. |
-| MelonLoader                            |                                 | Probably `MLLoader/Mods`, maybe `MLLoader/Plugins`. Use common sense and refer to [the .zip structure](#mod-installation-by-zip-structure) if you're unsure.   |
-|                                        | MelonLoader                     | Probably `MLLoader/Mods`, maybe `MLLoader/Plugins`. Use common sense and refer to [the .zip structure](#mod-installation-by-zip-structure) if you're unsure.   |
+| BepInEx (especially this BepInEx pack) | MelonLoader                     | Probably `MLLoader/Mods`, maybe `MLLoader/Plugins`. Use common sense and refer to [the .zip structure](#mod-installation-by-zip-structure) if unsure.   |
+| BepInEx / this BepInEx pack            |                                 | Probably `BepInEx/plugins`, maybe `BepInEx/patchers`. Use common sense and refer to [the .zip structure](#mod-installation-by-zip-structure) if unsure. |
+|                                        | BepInEx                         | Probably `BepInEx/plugins`, maybe `BepInEx/patchers`. Use common sense and refer to [the .zip structure](#mod-installation-by-zip-structure) if unsure. |
+| MelonLoader                            |                                 | Probably `MLLoader/Mods`, maybe `MLLoader/Plugins`. Use common sense and refer to [the .zip structure](#mod-installation-by-zip-structure) if unsure.   |
+|                                        | MelonLoader                     | Probably `MLLoader/Mods`, maybe `MLLoader/Plugins`. Use common sense and refer to [the .zip structure](#mod-installation-by-zip-structure) if unsure.   |
 
 ### I still can't figure it out!
 
