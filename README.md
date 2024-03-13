@@ -15,7 +15,7 @@ BepInEx is currently [one of the most popular modding tools for Unity on GitHub]
 
 ## This pack's contents
 
-This pack is preconfigured and ready to use for Supermarket Simulator modding.
+This pack is preconfigured and ready to use for Supermarket Simulator modding.\
 In particular, this pack comes with
 
 -   [BepInEx.MelonLoader.Loader](https://github.com/BepInEx/BepInEx.MelonLoader.Loader), a BepInEx loader for MelonLoader mods and plugins,
