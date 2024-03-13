@@ -110,8 +110,8 @@ Second, check [the FAQ](https://github.com/toebeann/BepInEx.SupermarketSimulator
 
 If not, at this moment, you can use the following channels to ask for help:
 
--   [Nexus Mods posts tab]()
--   [GitHub issues]()
+-   [Nexus Mods posts tab](https://www.nexusmods.com/supermarketsimulator/mods/9/?tab=posts)
+-   [GitHub issues](https://github.com/toebeann/BepInEx.SupermarketSimulator/issues)
 -   [BepInEx Discord](https://discord.gg/MpFEDAg) -- **Intended for developers, only technical support for BepInEx itself will be provided. No support for mods.**
 
 ## Licensing
