@@ -1,11 +1,11 @@
 import "https://deno.land/std@0.219.1/dotenv/load.ts";
-import { ensureDir } from "https://deno.land/std@0.195.0/fs/mod.ts";
+import { ensureDir } from "https://deno.land/std@0.219.1/fs/mod.ts";
 import {
   basename,
   dirname,
   relative,
   resolve,
-} from "https://deno.land/std@0.195.0/path/mod.ts";
+} from "https://deno.land/std@0.219.1/path/mod.ts";
 import { getInput } from "npm:@actions/core@^1.10.1";
 import { context } from "npm:@actions/github@^5.1.0";
 import JSZip from "npm:jszip@^3.10.1";
