@@ -33,7 +33,9 @@ Then, simply follow [the below instructions for installing mods](#installing-mod
 ## Installation
 
 > [!TIP]\
-> The game folder is the folder containing the game's executable (e.g. `Supermarket Simulator.exe`). Steam users can easily find this folder by locating the game in their Steam library, right-clicking it and then selecting `Manage` -> `Browse local files`.
+> The game folder is the folder containing the game's executable (e.g. `Supermarket Simulator.exe`).\
+> \
+> Steam users can find the game folder by locating the game in their Steam library, right-clicking it and then selecting `Manage` -> `Browse local files`.
 
 To install manually, follow these instructions:
 
@@ -48,19 +50,24 @@ To install manually, follow these instructions:
    You can check the file `LogOutput.log` in the `BepInEx` folder. If it exists, that means BepInEx has loaded and is doing its thing.
 
 > [!IMPORTANT]\
-> **With just this pack installed, you will not see any changes in-game!**
+> **With just this pack installed, you will not see any changes in-game!**\
+> Check the `LogOutput.log` file in the `BepInEx` folder to determine whether BepInEx has loaded.
 
 ## Installing mods
 
 > [!NOTE]\
-> The paths in this section are relative to the game folder, i.e. `BepInEx/plugins` = `[game folder]/BepInEx/plugins`, where `[game folder]` is the path to the folder containing the game's executable (e.g. `Supermarket Simulator.exe`). Steam users can easily find this folder by locating the game in their Steam library, right-clicking it and then selecting `Manage` -> `Browse local files`.
+> The paths in this section are relative to the game folder, i.e. `BepInEx/plugins` = `[game folder]/BepInEx/plugins`, where `[game folder]` is the path to the folder containing the game's executable (e.g. `Supermarket Simulator.exe`).\
+> \
+> Steam users can find the game folder by locating the game in their Steam library, right-clicking it and then selecting `Manage` -> `Browse local files`.
 
 > [!TIP]\
-> "Extract the .zip" simply means take the contents of the .zip file and put them in the specified location. For example, if you are told to "extract the .zip" or "extract the contents of the archive" into `BepInEx/plugins`, then you can simply open the .zip archive by double-clicking on it, then selecting everything inside and dragging the contents into your `BepInEx/plugins` folder. Easy!
+> "Extract the .zip" simply means take the contents of the .zip file and put them in the specified location.\
+> \
+> For example, if you are told to "extract the .zip" or "extract the contents of the archive" into `BepInEx/plugins`, then you can simply open the .zip archive by double-clicking on it, then just select everything inside and drag the contents into your `BepInEx/plugins` folder. Easy!
 
-**It is _strongly_ recommended to read and follow the instructions for each mod you download.**
+**It is _strongly_ recommended to read and follow the instructions provided in the description of each mod you download.**
 
-However, sometimes mod authors don't give good (or any) instructions, or you just can't be bothered. For those occasions, here's a simple reference:
+However, sometimes mod authors don't give good (or any) instructions, or you just can't be bothered to read them (we've all been there). For those occasions, here's a simple reference:
 
 ### Mod installation by type
 
@@ -97,7 +104,7 @@ However, sometimes mod authors don't give good (or any) instructions, or you jus
 
 ### I still can't figure it out!
 
-First, double check that there isn't instructions on the mod page, and if there are, follow them. Otherwise, you'll have to get in touch with the author of the mod somehow. Your best bet is usually going to be the Nexus Mods posts tab of that mod. Make sure to check that the question hasn't already been asked and answered.
+First, double check and follow the instructions on the mod page. If you still can't figure it out or there aren't any instructions on the mod page, you'll have to get in touch with the author of the mod somehow. Your best bet is usually going to be the Nexus Mods posts tab of that mod. Make sure to check that the question hasn't already been asked and answered.
 
 ## Useful links for mod authors
 
