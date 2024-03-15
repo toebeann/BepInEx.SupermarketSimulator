@@ -419,7 +419,12 @@ if (import.meta.main) {
   console.log(`Latest release version: ${latestReleaseVersion}`);
   console.log(`New version: ${version}`);
 
-  if (updatedSources && updatedSources.length === 0) {
+  if (
+    satisfies(version, new Range(`<= ${latestReleaseVersion}`), {
+      loose: true,
+      includePrerelease: true,
+    })
+  ) {
     // both bepinex and our payload have not released an update since last check, so we should cancel
     console.log("No updates since last check.");
     Deno.exit();
