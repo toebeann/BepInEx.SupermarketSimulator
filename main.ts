@@ -32,6 +32,7 @@ const REPO: Repo = { owner: "toebeann", repo: "bepinex.supermarketsimulator" };
 const BEPINEX_REPO: Repo = { owner: "BepInEx", repo: "BepInEx" };
 const PAYLOAD_DIR = "payload";
 const DIST_DIR = "dist";
+const DIST_NAME = "Tobey's BepInEx Pack for Supermarket Simulator.zip";
 const METADATA_FILE = ".metadata.json";
 const BEPINEX_RELEASE_TYPES = ["x86", "x64", "unix"];
 
@@ -471,7 +472,7 @@ if (import.meta.main) {
     ensureDir(DIST_DIR),
   ]);
   await writeArchiveToDisk(
-    resolve(DIST_DIR, "Tobey's BepInEx Pack for Supermarket Simulator.zip"),
+    resolve(DIST_DIR, DIST_NAME),
     merged,
   );
 
