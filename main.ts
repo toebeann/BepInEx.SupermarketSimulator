@@ -624,9 +624,7 @@ ${
           return `<details>
 <summary>Update ${parsed.repository} to ${release.tag_name}</summary>
 
-[Link](${release.html_url})
-
-## Release notes
+## [Release notes](${release.html_url})
 
 ${release.body ?? "No release notes provided."}
 
