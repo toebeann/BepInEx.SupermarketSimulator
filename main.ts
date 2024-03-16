@@ -622,7 +622,7 @@ ${
           if (!release || !parsed?.owner || !parsed?.name) return "";
 
           return `<details>
-<summary>${parsed.repository} ${release.tag_name}</summary>
+<summary>Bump ${parsed.repository} to ${release.tag_name}</summary>
 
 [Link](${release.html_url})
 
