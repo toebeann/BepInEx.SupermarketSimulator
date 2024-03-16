@@ -523,7 +523,7 @@ if (import.meta.main) {
       tag_name: `v${version}`,
       target_commitish: commit.commit,
       name: `v${version}`,
-      body: `## Release Notes
+      body: `## Release notes
 
 ${
         (updatedSources ?? []).map((source) => {
