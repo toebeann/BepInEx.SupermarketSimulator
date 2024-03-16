@@ -534,9 +534,9 @@ ${
           if (!release || !parsed?.owner || !parsed?.name) return "";
 
           return `<details>
-<summary>${parsed.owner}/${parsed.name}</summary>
+<summary>${parsed.repository} ${release.tag_name}</summary>
 
-${release.name ?? ""} ${release.tag_name} [Link](${release.html_url})
+[Link](${release.html_url})
 
 ${release.body ?? "No release notes provided."}
 
