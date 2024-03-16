@@ -3,6 +3,7 @@
   "name": "Tobey's BepInEx Pack for Supermarket Simulator",
   "repo": "toebeann/bepinex.supermarketsimulator",
   "bepinex": "bepinex/bepinex",
+  "platforms": ["x64"],
   "sources": [
     "BepInEx/BepInEx.MelonLoader.Loader",
     "github:toebeann/Tobey.FileTree",
