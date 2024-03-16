@@ -80,7 +80,7 @@ However, sometimes mod authors don't give good (or any) instructions, or you jus
 
 ### Mod installation by .zip structure
 
-| Folder located in root of .zip | Where to extract the .zip                     |
+| Folder located in root of .zip | Where to extract the .zip                 |
 | ------------------------------ | ----------------------------------------- |
 | `BepInEx`                      | Directly in the game folder               |
 | `MLLoader`                     | Directly in the game folder               |
