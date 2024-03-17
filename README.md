@@ -28,8 +28,6 @@ This pack comes with [BepInEx.MelonLoader.Loader](https://github.com/BepInEx/Bep
 
 To use BepInEx plugins and patchers together with MelonLoader mods and plugins, you should [uninstall MelonLoader](https://github.com/LavaGang/MelonLoader.Installer/blob/master/README.md#how-to-un-install-melonloader) (if applicable), then install this pack following [the instructions below](#installation).
 
-Then, simply follow [the below instructions for installing mods](#installing-mods) to have mods made for both BepInEx and MelonLoader running side-by-side!
-
 ## Installation
 
 > [!TIP]\
