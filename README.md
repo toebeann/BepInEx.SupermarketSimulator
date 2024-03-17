@@ -24,9 +24,20 @@ In particular, this pack comes with
 
 ## Compatibility with MelonLoader
 
-This pack comes with [BepInEx.MelonLoader.Loader](https://github.com/BepInEx/BepInEx.MelonLoader.Loader), and as such should be compatible with most mods and plugins made for MelonLoader 0.5.7.
+This pack comes with [BepInEx.MelonLoader.Loader](https://github.com/BepInEx/BepInEx.MelonLoader.Loader), enabling you to use mods made for both BepInEx and MelonLoader at the same time!
 
-To use BepInEx plugins and patchers together with MelonLoader mods and plugins, you should [uninstall MelonLoader](https://github.com/LavaGang/MelonLoader.Installer/blob/master/README.md#how-to-un-install-melonloader) (if applicable), then install this pack following [the instructions below](#installation).
+The only thing you need to be aware of is that mods for MelonLoader now need to be installed into the `MLLoader` folder.
+
+So, if you're already using MelonLoader, create a folder named `MLLoader` in your game folder and move the following folders in there:
+
+| Original folder location         | New folder location                       |
+| -------------------------------- | ----------------------------------------- |
+| `Supermarket Simulator/Mods`     | `Supermarket Simulator/MLLoader/Mods`     |
+| `Supermarket Simulator/Plugins`  | `Supermarket Simulator/MLLoader/Plugins`  |
+| `Supermarket Simulator/UserData` | `Supermarket Simulator/MLLoader/UserData` |
+| `Supermarket Simulator/UserLibs` | `Supermarket Simulator/MLLoader/UserLibs` |
+
+Finally, [uninstall MelonLoader](https://github.com/LavaGang/MelonLoader.Installer/blob/master/README.md#how-to-un-install-melonloader) (if applicable), and install this pack following [the instructions below](#installation).
 
 ## Installation
 
