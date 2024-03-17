@@ -1,6 +1,6 @@
 ![BepInEx logo](assets/logo.png)
 
-# Tobey's BepInEx Pack for Supermarket Simulator
+# Tobey's BepInEx x MelonLoader Pack for Supermarket Simulator
 
 This is a [BepInEx](https://github.com/BepInEx/BepInEx) pack for Supermarket Simulator, preconfigured and ready to use on Windows and Linux (including SteamOS), with compatibility for MelonLoader mods and plugins!
 
