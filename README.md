@@ -24,9 +24,18 @@ In particular, this pack comes with
 
 ## Compatibility with MelonLoader
 
+> [!CAUTION]
+> 
+> **Please read this section in full!**
+> 
+> Don't complain to mod authors that their mods don't work if you have MelonLoader and this pack both installed!
+
 This pack comes with [BepInEx.MelonLoader.Loader](https://github.com/BepInEx/BepInEx.MelonLoader.Loader), enabling you to use mods made for both BepInEx and MelonLoader at the same time!
 
-The only thing you need to be aware of is that mods for MelonLoader now need to be installed into the `MLLoader` folder.
+The only things you need to be aware of are:
+
+-  mods for MelonLoader now now need to be installed into the `MLLoader` folder, and
+-  you **must** uninstall MelonLoader, or this pack will not work.
 
 So, if you're already using MelonLoader, create a folder named `MLLoader` in your game folder and move the following folders in there:
 
@@ -37,11 +46,12 @@ So, if you're already using MelonLoader, create a folder named `MLLoader` in you
 | `Supermarket Simulator/UserData` | `Supermarket Simulator/MLLoader/UserData` |
 | `Supermarket Simulator/UserLibs` | `Supermarket Simulator/MLLoader/UserLibs` |
 
-Finally, [uninstall MelonLoader](https://github.com/LavaGang/MelonLoader.Installer/blob/master/README.md#how-to-un-install-melonloader) (if applicable), and install this pack following [the instructions below](#installation).
+Finally, [uninstall MelonLoader](https://github.com/LavaGang/MelonLoader.Installer/blob/master/README.md#how-to-un-install-melonloader), and install this pack following [the instructions below](#installation).
 
 ## Installation
 
-> [!TIP]\
+> [!TIP]
+> 
 > The game folder is the folder containing the game's executable (e.g. `Supermarket Simulator.exe`).
 > 
 > Steam users can find the game folder by right-clicking the game in their Steam library and selecting `Manage` -> `Browse local files`.
@@ -59,17 +69,20 @@ To install manually, follow these instructions:
    You can check the file `LogOutput.log` in the `BepInEx` folder. If it exists, that means BepInEx has loaded and is doing its thing.
 
 > [!IMPORTANT]\
-> **With just this pack installed, you will not see any changes in-game!**\
+> **With just this pack installed, you will not see any changes in-game!**
+> 
 > Check the `LogOutput.log` file in the `BepInEx` folder to determine whether BepInEx has loaded.
 
 ## Installing mods
 
-> [!NOTE]\
+> [!NOTE]
+> 
 > The paths in this section are relative to the game folder, i.e. `BepInEx/plugins` = `[game folder]/BepInEx/plugins`, where `[game folder]` is the path to the folder containing the game's executable (e.g. `Supermarket Simulator.exe`).
 > 
 > Steam users can find the game folder by right-clicking the game in their Steam library and selecting `Manage` -> `Browse local files`.
 
-> [!TIP]\
+> [!TIP]
+> 
 > "Extract the .zip" simply means take the contents of the .zip file and put them in the specified location.
 > 
 > For example, if you are told to "extract the .zip" or "extract the contents of the archive" into `BepInEx/plugins`, then you can simply open the .zip archive by double-clicking on it, then just select everything inside and drag the contents into your `BepInEx/plugins` folder. Easy!
@@ -100,7 +113,8 @@ However, sometimes mod authors don't give good (or any) instructions, or you jus
 
 ### Mod installation by requirements
 
-> [!TIP]\
+> [!TIP]
+> 
 > On Nexus mod pages, you can usually see a mod's requirements by expanding the `Requirements` near the top of the description tab. Otherwise, read the mod's description.
 
 | Listed in requirements                 | Mentioned somewhere on the page | Where to extract the .zip                                                                                                                                          |
