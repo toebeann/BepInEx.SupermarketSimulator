@@ -18,8 +18,7 @@ BepInEx is currently [one of the most popular modding tools for Unity on GitHub]
 This pack is preconfigured and ready to use for Supermarket Simulator modding.\
 In particular, this pack comes with
 
--   [BepInEx.MelonLoader.Loader](https://github.com/BepInEx/BepInEx.MelonLoader.Loader), a BepInEx loader for MelonLoader mods and plugins,
--   [Tobey.PluginDoctor](https://github.com/toebeann/Tobey.PluginDoctor), a BepInEx plugin & patcher combo which diagnoses and reports advice on how to handle common problems with BepInEx 5 plugins, and
+-   [BepInEx.MelonLoader.Loader](https://github.com/BepInEx/BepInEx.MelonLoader.Loader), a BepInEx loader for MelonLoader mods and plugins, and
 -   [Tobey.FileTree](https://github.com/toebeann/Tobey.FileTree), a configurable BepInEx plugin which logs the game's file tree to aid in troubleshooting issues.
 
 ## Compatibility with MelonLoader
@@ -157,7 +156,6 @@ However, the .zip create by this repository's code contains binaries from the fo
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [BepInEx](https://github.com/BepInEx/BepInEx)                                       | [LGPL-2.1](https://github.com/BepInEx/BepInEx/blob/master/LICENSE)                                                                                                                                                                                                       |
 | [BepInEx.MelonLoader.Loader](https://github.com/BepInEx/BepInEx.MelonLoader.Loader) | [AGPL-3.0](https://github.com/BepInEx/BepInEx.MelonLoader.Loader/blob/master/LICENSE) and [Apache-2.0](https://github.com/BepInEx/BepInEx.MelonLoader.Loader/blob/master/LICENSE_MelonLoader.md) (for its use of [MelonLoader](https://github.com/LavaGang/MelonLoader)) |
-| [Tobey.PluginDoctor](https://github.com/toebeann/Tobey.PluginDoctor)                | [LGPL-3.0](https://github.com/toebeann/Tobey.PluginDoctor/blob/main/LICENSE)                                                                                                                                                                                             |
 | [Tobey.FileTree](https://github.com/toebeann/Tobey.FileTree)                        | [LGPL-3.0](https://github.com/toebeann/Tobey.FileTree/blob/main/LICENSE)                                                                                                                                                                                                 |
 
 The code in this repository is licensed under the [LGPL-3.0 license](https://github.com/toebeann/BepInEx.SupermarketSimulator/blob/main/LICENSE).
