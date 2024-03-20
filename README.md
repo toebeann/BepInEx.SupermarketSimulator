@@ -76,7 +76,7 @@ To install manually, follow these instructions:
 
 > [!NOTE]
 > 
-> The paths in this section are relative to the game folder, i.e. `BepInEx/plugins` = `[game folder]/BepInEx/plugins`, where `[game folder]` is the path to the folder containing the game's executable (e.g. `Supermarket Simulator.exe`).
+> The paths in this section are relative to the game folder, e.g. `BepInEx/plugins` = `[game folder]/BepInEx/plugins`, where `[game folder]` is the path to the folder containing the game's executable (e.g. `Supermarket Simulator.exe`).
 > 
 > Steam users can find the game folder by right-clicking the game in their Steam library and selecting `Manage` -> `Browse local files`.
 
