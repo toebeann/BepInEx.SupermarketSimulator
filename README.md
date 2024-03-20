@@ -133,6 +133,7 @@ First, double check and follow the instructions on the mod page. If you still ca
 -   [BepInEx: writing basic plugin walkthrough](https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/)
 -   [BepInEx: useful plugins for modding](https://docs.bepinex.dev/articles/dev_guide/dev_tools.html)
 -   [BepInEx: patching game methods at runtime](https://docs.bepinex.dev/articles/dev_guide/runtime_patching.html)
+-   [Modded Supermarket Simulator Discord](https://discord.gg/hjGpjB3GXA)
 
 ## Issues, questions, etc.
 
@@ -142,6 +143,7 @@ Second, check [the FAQ](https://github.com/toebeann/BepInEx.SupermarketSimulator
 
 If not, at this moment, you can use the following channels to ask for help:
 
+-   [Modded Supermarket Simulator Discord](https://discord.gg/hjGpjB3GXA)
 -   [Nexus Mods posts tab](https://www.nexusmods.com/supermarketsimulator/mods/9/?tab=posts)
 -   [GitHub issues](https://github.com/toebeann/BepInEx.SupermarketSimulator/issues)
 -   [BepInEx Discord](https://discord.gg/MpFEDAg) -- **Intended for developers, only technical support for BepInEx itself will be provided. No support for mods.**
