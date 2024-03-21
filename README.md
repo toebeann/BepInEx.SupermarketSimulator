@@ -65,8 +65,7 @@ To install manually, follow these instructions:
     WINEDLLOVERRIDES="winhttp=n,b" %command%
     ```
     **⚠️ _Do not set the launch options on Windows!_**
-1. Run the game as normal (e.g. launch it from Steam).\
-   You can check the file `LogOutput.log` in the `BepInEx` folder. If it exists, that means BepInEx has loaded and is doing its thing.
+1. Run the game as normal (e.g. launch it from Steam).
 
 > [!IMPORTANT]\
 > **With just this pack installed, you will not see any changes in-game!**
