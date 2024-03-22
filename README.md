@@ -28,8 +28,6 @@ In particular, this pack comes with
 > **THIS PACK REPLACES MELONLOADER!**
 > 
 > **If you want to use MelonLoader mods, it is important that you read this section in full!**
-> 
-> Don't complain to mod authors that their mods don't work if you have MelonLoader and this pack both installed!
 
 This pack comes with [BepInEx.MelonLoader.Loader](https://github.com/BepInEx/BepInEx.MelonLoader.Loader), enabling you to use mods made for both BepInEx and MelonLoader at the same time!
 
