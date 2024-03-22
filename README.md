@@ -33,7 +33,7 @@ This pack comes with [BepInEx.MelonLoader.Loader](https://github.com/BepInEx/Bep
 
 The only things you need to be aware of are:
 
--  mods for MelonLoader now now need to be installed into the `MLLoader` folder, and
+-  mods for MelonLoader now now need to be installed into the `MLLoader` subfolders, and
 -  you **must** uninstall MelonLoader, or this pack will not work.
 
 So, if you're already using MelonLoader, create a folder named `MLLoader` in your game folder and move the following folders in there:
