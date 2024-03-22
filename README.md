@@ -25,7 +25,9 @@ In particular, this pack comes with
 
 > [!CAUTION]
 > 
-> **Please read this section in full!**
+> **THIS PACK REPLACES MELONLOADER!**
+> 
+> **If you want to use MelonLoader mods, it is important that you read this section in full!**
 > 
 > Don't complain to mod authors that their mods don't work if you have MelonLoader and this pack both installed!
 
