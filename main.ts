@@ -329,8 +329,8 @@ const mergeArchives = async (...archives: JSZip[]) => {
   const merged = new JSZip();
 
   for (const archive of archives) {
-    for (const [path, file] of Object.entries(archive.files)) {
-      merged.file(path, file.async("uint8array"));
+    for await (const [path, file] of Object.entries(archive.files)) {
+      merged.file(path, await file.async("uint8array"));
     }
   }
 
