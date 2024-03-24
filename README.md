@@ -24,9 +24,17 @@ In particular, this pack comes with
 
 ## Compatibility with MelonLoader
 
+> [!IMPORTANT]
+>
+> **This pack _replaces_ MelonLoader!**
+>
+> Once you have installed this pack, **do not install MelonLoader**, even if mods require it. This pack will handle loading your BepInEx **and** MelonLoader mods!
+
 This pack comes with [BepInEx.MelonLoader.Loader](https://github.com/BepInEx/BepInEx.MelonLoader.Loader), enabling you to use mods made for both BepInEx and MelonLoader at the same time!
 
-The only thing you need to be aware of is that mods for MelonLoader now need to be installed into the `MLLoader` subfolders. See the [Installing mods](#installing-mods) section below for details.
+With this pack installed, mods for MelonLoader need to be installed into the `MLLoader` subfolders to work. See the [Installing mods](#installing-mods) section below for details.
+
+When you run the game for the first time with this pack installed, [Tobey's BepInEx MelonLoader Wizard](https://github.com/toebeann/Tobey.BepInExMelonLoaderWizard) will handle migrating any MelonLoader mods you already have installed to the `MLLoader` folder for you, and clean up any MelonLoader files and folders that you won't need anymore!
 
 ## Installation
 
