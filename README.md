@@ -47,7 +47,7 @@ When you run the game for the first time with this pack installed, [Tobey's BepI
 To install manually, follow these instructions:
 
 1. [Download Tobey's BepInEx x MelonLoader Pack for Supermarket Simulator](https://github.com/toebeann/BepInEx.SupermarketSimulator/releases/latest/download/Tobey.s.BepInEx.x.MelonLoader.Pack.for.Supermarket.Simulator.zip).
-1. Extract the contents of the downloaded archive into the game folder.\
+1. Extract the contents of the downloaded archive into the game folder. Replace any files if prompted.\
    **ℹ️** _That just means open the .zip file and drag the files and folders out into the game folder!_
 1. **Linux (Steam Deck etc.) ONLY:** In your Steam library, right-click the game, select `Properties...` and set the launch options to:
     ```
