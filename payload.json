@@ -8,5 +8,6 @@
     "github:BepInEx/BepInEx.MelonLoader.Loader",
     "github:toebeann/Tobey.FileTree",
     "github:toebeann/Tobey.BepInExMelonLoaderWizard"
-  ]
+  ],
+  "proxyAliases": ["version.dll"]
 }
