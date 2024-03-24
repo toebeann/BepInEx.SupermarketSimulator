@@ -6,6 +6,7 @@
   "platforms": ["x64"],
   "sources": [
     "BepInEx/BepInEx.MelonLoader.Loader",
-    "github:toebeann/Tobey.FileTree"
+    "github:toebeann/Tobey.FileTree",
+    "github:toebeann/Tobey.BepInExMelonLoaderWizard"
   ]
 }
