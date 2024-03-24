@@ -34,7 +34,7 @@ This pack comes with [BepInEx.MelonLoader.Loader](https://github.com/BepInEx/Bep
 
 With this pack installed, mods for MelonLoader need to be installed into the `MLLoader` subfolders to work. See the [Installing mods](#installing-mods) section below for details.
 
-When you run the game for the first time with this pack installed, [Tobey's BepInEx MelonLoader Wizard](https://github.com/toebeann/Tobey.BepInExMelonLoaderWizard) will handle migrating any MelonLoader mods you already have installed to the `MLLoader` folder for you, and clean up any MelonLoader files and folders that you won't need anymore!
+When you run the game for the first time with this pack installed, [Tobey's BepInEx MelonLoader Wizard](https://github.com/toebeann/Tobey.BepInExMelonLoaderWizard) will handle migrating any MelonLoader mods you already have installed to the `MLLoader` folder for you, and clean up any MelonLoader files and folders that you won't be needing anymore!
 
 ## Installation
 
