@@ -39,25 +39,32 @@ const repoSchema = z.object({
 type Repo = z.infer<typeof repoSchema>;
 
 const unitySchema = z.object({
-  version: z.string(),
-  corlibs: z.string().array().optional(),
-  libraries: z.string().array().optional(),
+  unity: z.object({
+    version: z.string(),
+    corlibs: z.string().array().optional(),
+    libraries: z.string().array().optional(),
+  }).optional(),
+});
+
+const foldersSchema = z.object({
+  folders: z.string().array().default([]),
 });
 
 const platformSchema = z.literal("x86").or(z.literal("x64")).or(
   z.literal("unix"),
 );
 type Platform = z.infer<typeof platformSchema>;
-const platformsSchema = z.array(platformSchema);
+const platformsSchema = z.object({ platforms: z.array(platformSchema) });
 
 const REPO = repoSchema.parse(gh(payloadJson.repo));
 const BEPINEX_REPO = repoSchema.parse(gh(payloadJson.bepinex));
 const PAYLOAD_DIR = "payload";
 const DIST_DIR = "dist";
 const METADATA_FILE = ".metadata.json";
-const BEPINEX_PLATFORMS = platformsSchema.parse(payloadJson.platforms);
-const UNITY = "unity" in payloadJson &&
-  Object.freeze(unitySchema.parse(payloadJson.unity));
+
+const { platforms } = platformsSchema.parse(payloadJson);
+const { unity } = unitySchema.parse(payloadJson);
+const { folders } = foldersSchema.parse(payloadJson);
 
 type Release = Awaited<
   ReturnType<InstanceType<typeof Octokit>["rest"]["repos"]["getRelease"]>
@@ -480,7 +487,7 @@ if (import.meta.main) {
 
   // we have a new release, let's handle it
   const archives = await Promise.all([
-    ...BEPINEX_PLATFORMS.map((platform) =>
+    ...platforms.map((platform) =>
       getBepInExArchive(latestBepInExRelease, platform, octokit)
     ),
     ...latestPayloadReleases.map((release) =>
@@ -516,51 +523,56 @@ if (import.meta.main) {
   const merged = await mergeArchives(
     ...archives.map((result) => result.archive!),
   );
+
+  for (const folder of folders) {
+    merged.folder(folder);
+  }
+
   await Promise.all([
     embedPayload(merged),
-    UNITY && UNITY.corlibs
+    unity && unity.corlibs
       ? (async () => {
         console.log(
-          `Downloading corlibs for Unity version: ${UNITY.version}...`,
+          `Downloading corlibs for Unity version: ${unity.version}...`,
         );
 
         const corlibs = await downloadData(
-          `https://unity.bepinex.dev/corlibs/${UNITY.version}.zip`,
+          `https://unity.bepinex.dev/corlibs/${unity.version}.zip`,
         );
 
         if (!corlibs) {
-          throw `Failed to download corlibs for Unity version: ${UNITY.version}`;
+          throw `Failed to download corlibs for Unity version: ${unity.version}`;
         }
 
-        console.log(`Embedding corlibs: ${UNITY.version}...`);
+        console.log(`Embedding corlibs: ${unity.version}...`);
         return embedData(
           merged,
           corlibs,
-          UNITY.corlibs!.length === 0
+          unity.corlibs!.length === 0
             ? undefined
-            : (filename) => UNITY.corlibs!.includes(filename),
+            : (filename) => unity.corlibs!.includes(filename),
         );
       })()
       : Promise.resolve(),
-    UNITY && UNITY.libraries
+    unity && unity.libraries
       ? (async () => {
         console.log(
-          `Downloading Unity libraries for version: ${UNITY.version}...`,
+          `Downloading Unity libraries for version: ${unity.version}...`,
         );
         const libraries = await downloadData(
-          `https://unity.bepinex.dev/libraries/${UNITY.version}.zip`,
+          `https://unity.bepinex.dev/libraries/${unity.version}.zip`,
         );
 
         if (!libraries) {
-          throw `Failed to download Unity libraries for version: ${UNITY.version}`;
+          throw `Failed to download Unity libraries for version: ${unity.version}`;
         }
-        console.log(`Embedding Unity libraries: ${UNITY.version}...`);
+        console.log(`Embedding Unity libraries: ${unity.version}...`);
         return embedData(
           merged,
           libraries,
-          UNITY.libraries!.length === 0
+          unity.libraries!.length === 0
             ? undefined
-            : (filename) => UNITY.libraries!.includes(filename),
+            : (filename) => unity.libraries!.includes(filename),
         );
       })
       : Promise.resolve(),
