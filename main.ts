@@ -50,6 +50,10 @@ const foldersSchema = z.object({
   folders: z.string().array().default([]),
 });
 
+const proxyAliasesSchema = z.object({
+  proxyAliases: z.string().array().default([]),
+});
+
 const platformSchema = z.literal("x86").or(z.literal("x64")).or(
   z.literal("unix"),
 );
@@ -65,6 +69,7 @@ const METADATA_FILE = ".metadata.json";
 const { platforms } = platformsSchema.parse(payloadJson);
 const { unity } = unitySchema.parse(payloadJson);
 const { folders } = foldersSchema.parse(payloadJson);
+const { proxyAliases } = proxyAliasesSchema.parse(payloadJson);
 
 type Release = Awaited<
   ReturnType<InstanceType<typeof Octokit>["rest"]["repos"]["getRelease"]>
@@ -325,7 +330,7 @@ const mergeArchives = async (...archives: JSZip[]) => {
 
   for (const archive of archives) {
     for (const [path, file] of Object.entries(archive.files)) {
-      merged.file(path, await file.async("uint8array"));
+      merged.file(path, file.async("uint8array"));
     }
   }
 
@@ -528,7 +533,16 @@ if (import.meta.main) {
     merged.folder(folder);
   }
 
+  const proxy = merged.file("winhttp.dll");
   await Promise.all([
+    proxy
+      ? (async () => {
+        const data = await proxy.async("uint8array");
+        for (const alias of proxyAliases) {
+          merged.file(alias, data);
+        }
+      })()
+      : Promise.resolve(),
     embedPayload(merged),
     unity && unity.corlibs
       ? (async () => {
