@@ -2,7 +2,7 @@
 
 # Tobey's BepInEx x MelonLoader Pack for Supermarket Simulator
 
-This is a [BepInEx](https://github.com/BepInEx/BepInEx) pack for Supermarket Simulator, preconfigured and ready to use on Windows, macOS and Linux (including SteamOS), with compatibility for MelonLoader mods and plugins!
+This is a [BepInEx](https://github.com/BepInEx/BepInEx) pack for Supermarket Simulator, preconfigured and ready to use on Windows, macOS and Linux (including Steam Deck, SteamOS, etc.), with compatibility for MelonLoader mods and plugins!
 
 BepInEx is a general purpose framework for Unity modding. BepInEx includes tools and libraries to
 
