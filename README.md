@@ -2,7 +2,7 @@
 
 # Tobey's BepInEx x MelonLoader Pack for Supermarket Simulator
 
-This is a [BepInEx](https://github.com/BepInEx/BepInEx) pack for Supermarket Simulator, preconfigured and ready to use on Windows and Linux (including SteamOS), with compatibility for MelonLoader mods and plugins!
+This is a [BepInEx](https://github.com/BepInEx/BepInEx) pack for Supermarket Simulator, preconfigured and ready to use on Windows, macOS and Linux (including SteamOS), with compatibility for MelonLoader mods and plugins!
 
 BepInEx is a general purpose framework for Unity modding. BepInEx includes tools and libraries to
 
@@ -49,11 +49,13 @@ To install manually, follow these instructions:
 1. [Download Tobey's BepInEx x MelonLoader Pack for Supermarket Simulator](https://github.com/toebeann/BepInEx.SupermarketSimulator/releases/latest/download/Tobey.s.BepInEx.x.MelonLoader.Pack.for.Supermarket.Simulator.zip).
 1. Extract the contents of the downloaded archive into the game folder. Replace any files if prompted.\
    **ℹ️** _That just means open the .zip file and drag the files and folders out into the game folder!_
-1. **Linux (Steam Deck etc.) ONLY:** In your Steam library, right-click the game, select `Properties...` and set the launch options to:
+1. **macOS & Linux (Steam Deck etc.) ONLY:** In your Steam library, right-click the game, select `Properties...` and set the launch options:
     ```
-    WINEDLLOVERRIDES="winhttp=n,b" %command%
+    export WINEDLLOVERRIDES="winhttp=n,b" && %command%
     ```
     **⚠️ _Do not set the launch options on Windows!_**
+   
+   **ℹ️** _On macOS and Linux you can alternatively set the Wine Configuration (`winecfg`) for the game to add `winhttp` as a DLL override via the `Libraries` tab, setting it to `native, builtin`. Remove the Steam launch options if applicable._
 1. Run the game as normal (e.g. launch it from Steam).
 1. If you are prompted to migrate mods from MelonLoader, confirm the prompts.
 
