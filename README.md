@@ -19,7 +19,7 @@ This pack is preconfigured and ready to use for Supermarket Simulator modding.\
 In particular, this pack comes with
 
 -   [BepInEx.MelonLoader.Loader](https://github.com/BepInEx/BepInEx.MelonLoader.Loader), a configurable BepInEx loader for MelonLoader mods and plugins,
--   [Tobey's BepInEx MelonLoader Wizard](https://github.com/toebeann/Tobey.BepInExMelonLoaderWizard), a BepInEx patcher which makes migrating from MelonLoader a breeze, and
+-   [Tobey's BepInEx MelonLoader Wizard](https://github.com/toebeann/Tobey.BepInExMelonLoaderWizard), a utility focusing on helping users easily migrate from vanilla MelonLoader, and
 -   [Tobey's File Tree Logger for BepInEx](https://github.com/toebeann/Tobey.FileTree), a configurable BepInEx plugin which logs the game's file tree to aid in troubleshooting issues.
 
 ## Compatibility with MelonLoader
