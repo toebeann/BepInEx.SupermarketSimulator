@@ -51,7 +51,7 @@ To install manually, follow these instructions:
    
    **ℹ️** _On macOS and Linux you can alternatively set the Wine Configuration (`winecfg`) for the game to add `winhttp` as a DLL override via the `Libraries` tab, setting it to `native, builtin`. Remove the Steam launch options if applicable._
 1. Run the game as normal (e.g. launch it from Steam).
-1. If you are prompted to migrate mods from MelonLoader, confirm the prompts.
+1. If you are prompted to migrate mods from MelonLoader, confirm the prompts as desired.
 
 > [!IMPORTANT]
 >
