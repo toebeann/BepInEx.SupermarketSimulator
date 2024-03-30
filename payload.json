@@ -1,13 +1,17 @@
 {
-  "version": "0.3.0",
+  "version": "0.3.1",
   "name": "Tobey's BepInEx x MelonLoader Pack for Supermarket Simulator",
   "repo": "toebeann/bepinex.supermarketsimulator",
   "bepinex": "bepinex/bepinex",
-  "platforms": ["x64"],
+  "platforms": [
+    "x64"
+  ],
   "sources": [
     "github:BepInEx/BepInEx.MelonLoader.Loader",
     "github:toebeann/Tobey.FileTree",
     "github:toebeann/Tobey.BepInExMelonLoaderWizard"
   ],
-  "proxyAliases": ["version.dll"]
+  "proxyAliases": [
+    "version.dll"
+  ]
 }
