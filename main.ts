@@ -106,9 +106,7 @@ const getBepInExAsset = (release: Release, platform: Platform) =>
     release.assets.find((asset) => bepinexAssetFilter(asset, platform));
 
 const getVersion = (version: string) => {
-  const cleaned = clean(version, true);
-  return valid(cleaned, true) ??
-    coerce(cleaned, { loose: true })?.version;
+  return coerce(version, { loose: true, includePrerelease: true })?.version;
 };
 
 const getMetadata = async () => {
