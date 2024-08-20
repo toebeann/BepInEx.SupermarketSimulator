@@ -129,7 +129,7 @@ async function* getFilePaths(dir: string): AsyncGenerator<string> {
   }
 }
 
-const handleReleaseError = (error: unknown, repo: Repo) => {
+const handleReleaseError = (error: unknown, { owner, repo }: Repo) => {
   // an error occured while attempting to get the latest release
   const parsed = httpErrorSchema.safeParse(error);
   if (parsed.success) {
@@ -138,13 +138,13 @@ const handleReleaseError = (error: unknown, repo: Repo) => {
       : "Could not retrieve releases";
 
     return [
-      `${message} for repo: /${repo.owner}/${repo.repo}`,
+      `${message} for repo: /${owner}/${repo}`,
       parsed.data.status,
       parsed.data.message,
     ].join(" ");
   } else {
     return [
-      `Could not retrieve releases for repo: /${repo.owner}/${repo.repo}`,
+      `Could not retrieve releases for repo: /${owner}/${repo}`,
       inspect(error, { colors: true }),
     ].join(EOL);
   }
