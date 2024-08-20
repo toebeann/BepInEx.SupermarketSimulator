@@ -328,13 +328,11 @@ const mergeArchives = async (...archives: JSZip[]) => {
 };
 
 if (import.meta.main) {
-  const { GITHUB_PERSONAL_ACCESS_TOKEN, CI } = env;
+  const { GITHUB_PERSONAL_ACCESS_TOKEN, CI, GITHUB_ACTOR } = env;
 
   if (!GITHUB_PERSONAL_ACCESS_TOKEN && CI) {
     throw "GitHub PAT not set";
   }
-
-  const { GITHUB_ACTOR } = env;
 
   const { pusher } = context.payload;
   const gitConfigName = (getInput("git-config-email") ||
