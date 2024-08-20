@@ -139,7 +139,8 @@ const handleReleaseError = (error: unknown, repo: Repo) => {
 
     return [
       `${message} for repo: /${repo.owner}/${repo.repo}`,
-      `${parsed.data.status} ${parsed.data.message}`,
+      parsed.data.status,
+      parsed.data.message,
     ].join(" ");
   } else {
     return [
