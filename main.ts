@@ -2,6 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 import { EOL } from "node:os";
 import { basename, dirname, join, relative, resolve } from "node:path";
 import { env, exit } from "node:process";
+import { Glob, inspect } from "bun";
 import { getInput } from "@actions/core";
 import { context } from "@actions/github";
 import { ensureDir } from "fs-extra";
@@ -13,7 +14,6 @@ import { simpleGit } from "simple-git";
 import { coerce, inc, parse, Range, satisfies } from "semver";
 import { z } from "zod";
 import payloadJson from "./payload.json" with { type: "json" };
-import { Glob, inspect } from "bun";
 
 const repoSchema = z.object({
   owner: z.string(),
