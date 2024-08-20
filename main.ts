@@ -150,21 +150,22 @@ const handleReleaseError = (error: unknown, { owner, repo }: Repo) => {
   }
 };
 
-const handleAssetError = (error: unknown, asset: Asset) => {
+const handleAssetError = (error: unknown, { name }: Asset) => {
   // an error occured while attempting to get the latest release
   const parsed = httpErrorSchema.safeParse(error);
   if (parsed.success) {
     const message = parsed.data.status === 404
-      ? `Asset ${asset.name} not found`
-      : `Could not retrieve asset ${asset.name}`;
+      ? `Asset ${name} not found`
+      : `Could not retrieve asset ${name}`;
 
     console.error(
       `${message} for repo: /${BEPINEX_REPO.owner}/${BEPINEX_REPO.repo}`,
-      `${parsed.data.status} ${parsed.data.message}`,
+      parsed.data.status,
+      parsed.data.message,
     );
   } else {
     console.error(
-      `Could not retrieve asset ${asset.name} for repo: /${BEPINEX_REPO.owner}/${BEPINEX_REPO.repo}`,
+      `Could not retrieve asset ${name} for repo: /${BEPINEX_REPO.owner}/${BEPINEX_REPO.repo}`,
       error,
     );
   }
