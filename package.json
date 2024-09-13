@@ -12,6 +12,7 @@
     "@types/bun": "latest",
     "@types/fs-extra": "^11.0.4",
     "@types/lodash.maxby": "^4.6.9",
+    "@types/node": "^22.5.4",
     "@types/parse-github-url": "^1.0.3",
     "@types/semver": "^7.5.8"
   },
