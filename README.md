@@ -103,7 +103,7 @@ Otherwise, make sure the game actually works already without mods, then [join th
 
 5. Run the game from Steam as normal.
 
-    If you previously had MelonLoader installed, you may be prompted to migrate your mods from MelonLoader and clean up redundant files from MelonLoader. It is recommended to click `Yes` to each of these prompts unless you know what you're doing. This will allow any MelonLoader mods you previously installed to continue to work with this pack.
+    If you previously had MelonLoader installed, you may be prompted to migrate your mods and clean up redundant files from MelonLoader. It is recommended to click `Yes` to each of these prompts unless you know what you're doing. This will allow any MelonLoader mods you previously installed to continue to work with this pack.
 
 6. Exit the game at the main menu.
 
