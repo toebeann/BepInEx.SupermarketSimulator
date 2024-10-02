@@ -10,7 +10,8 @@
     "github:BepInEx/BepInEx.MelonLoader.Loader",
     "github:toebeann/Tobey.FileTree",
     "github:toebeann/Tobey.BepInExMelonLoaderWizard",
-    "github:toebeann/Tobey.MLLoader.GameInfo"
+    "github:toebeann/Tobey.MLLoader.GameInfo",
+    "github:toebeann/Tobey.BepInEx.Timestamp"
   ],
   "proxyAliases": [
     "version.dll"

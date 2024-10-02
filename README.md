@@ -20,7 +20,8 @@ In particular, this pack comes with
 
 -   [BepInEx.MelonLoader.Loader](https://github.com/BepInEx/BepInEx.MelonLoader.Loader), a configurable BepInEx loader for MelonLoader mods and plugins,
 -   [Tobey's BepInEx MelonLoader Wizard](https://github.com/toebeann/Tobey.BepInExMelonLoaderWizard), a utility focusing on helping users easily migrate from vanilla MelonLoader,
--   [Tobey's File Tree Logger for BepInEx](https://github.com/toebeann/Tobey.FileTree), a configurable BepInEx plugin which logs the game's file tree to aid in troubleshooting issues, and
+-   [Tobey's File Tree Logger for BepInEx](https://github.com/toebeann/Tobey.FileTree), a configurable BepInEx plugin which logs the game's file tree to aid in troubleshooting issues,
+-   [Tobey's Timestamp Logger for BepInEx](https://github.com/toebeann/Tobey.BepInEx.Timestamp), a configurable BepInEx patcher which logs the current timestamp, and
 -   [Tobey's Game Info Fix for BepInEx.MelonLoader.Loader](https://github.com/toebeann/Tobey.MLLoader.GameInfo), a simple patch to ensure the game info logs of BepInEx.MelonLoader.Loader are correct.
 
 ## Compatibility with MelonLoader
@@ -212,5 +213,6 @@ However, the .zip created by this repository's code contains binaries from the f
 | [Tobey.BepInExMelonLoaderWizard](https://github.com/toebeann/Tobey.BepInExMelonLoaderWizard) | [LGPL-3.0](https://github.com/toebeann/Tobey.BepInExMelonLoaderWizard/blob/main/LICENSE)                                                                                                                                                                                 |
 | [Tobey.FileTree](https://github.com/toebeann/Tobey.FileTree)                                 | [LGPL-3.0](https://github.com/toebeann/Tobey.FileTree/blob/main/LICENSE)                                                                                                                                                                                                 |
 | [Tobey.MLLoader.GameInfo](https://github.com/toebeann/Tobey.MLLoader.GameInfo)               | [LGPL-3.0](https://github.com/toebeann/Tobey.MLLoader.GameInfo/blob/main/LICENSE)                                                                                                                                                                                        |
+| [Tobey.BepInEx.Timestamp](https://github.com/toebeann/Tobey.BepInEx.Timestamp)               | [LGPL-3.0](https://github.com/toebeann/Tobey.BepInEx.Timestamp/blob/main/LICENSE)                                                                                                                                                                                        |
 
 The code in this repository is licensed under the [LGPL-3.0 license](https://github.com/toebeann/BepInEx.SupermarketSimulator/blob/main/LICENSE).
