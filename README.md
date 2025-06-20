@@ -54,13 +54,21 @@ For Steam Deck handhelds, switch to Desktop mode to follow the instructions. Onc
 
 ### macOS
 
-It varies depending on how you run the game and your level of technical know-how. The easiest for novices is to use parallels (Apple Silicon) or bootcamp (Intel) and follow the Windows instructions. Sorry.
+[Just use gib](https://github.com/toebeann/gib). Seriously, it's way easier than manual installation on macOS.
 
-If you're a techie then you can probably figure out how to get it running on macOS by following the Linux instructions, but note that you'll have to refer to your emulator's instructions for how to set the required environment variable (`WINEDLLOVERIDES="winhttp=n,b"`) or how to run `winecfg` so that you can [set `winhttp` as a DLL override](https://docs.bepinex.dev/articles/advanced/proton_wine.html) - setting the environment variable in the Steam launch options as Linux users do won't work.
+1. [Download Tobey's BepInEx x MelonLoader Pack for Supermarket Simulator](https://github.com/toebeann/BepInEx.SupermarketSimulator/releases/latest/download/Tobey.s.BepInEx.x.MelonLoader.Pack.for.Supermarket.Simulator.zip). Make sure to unzip it in your Downloads folder if your browser doesn't do this automatically.
+2. Open Terminal with Launchpad or Spotlight (press `⌘ Space`, type `terminal`, press `Enter`).
+3. Copy the command from the [gib README](https://github.com/toebeann/gib#readme) and paste it into the Terminal with `⌘ V`, and press `Enter` to run it.
 
-Otherwise, make sure the game actually works already without mods, then [join the Modded Supermarket Simulator discord server](https://discord.gg/hjGpjB3GXA) and `@toebean` in the `#general-support` channel with info about which emulator you use to run the game (e.g. Whisky? HyperPlay? Something else?). Be aware I will not help you if it's pirated.
+If you get stuck, refer to the [gib README](https://github.com/toebeann/gib#readme) for help.
+
+If you're a glutton for punishment and would rather install it manually, follow  you'd rather try to install it manually, follow [the idiot's guide to macOS installation](https://github.com/toebeann/BepInEx.SupermarketSimulator/wiki/Idiot's-guide-to-macOS-installation).
 
 ### Full instructions for Windows, Linux and Steam Deck handhelds
+
+> [!WARNING]
+>
+> These are instructions are **not** for macOS! Please refer to the [macOS](#macos) section above for instructions on installing this pack on macOS!
 
 > [!TIP]
 >
