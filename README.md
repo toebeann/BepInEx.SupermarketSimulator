@@ -62,7 +62,7 @@ For Steam Deck handhelds, switch to Desktop mode to follow the instructions. Onc
 
 If you get stuck, refer to the [gib README](https://github.com/toebeann/gib#readme) for help.
 
-If you're a glutton for punishment and would rather install it manually, follow  you'd rather try to install it manually, follow [the idiot's guide to macOS installation](https://github.com/toebeann/BepInEx.SupermarketSimulator/wiki/Idiot's-guide-to-macOS-installation).
+If you're a glutton for punishment and would rather install it manually, follow [the idiot's guide to macOS installation](https://github.com/toebeann/BepInEx.SupermarketSimulator/wiki/Idiot's-guide-to-macOS-installation).
 
 ### Full instructions for Windows, Linux and Steam Deck handhelds
 
