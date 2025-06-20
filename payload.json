@@ -1,10 +1,11 @@
 {
-  "version": "0.4.1",
+  "version": "0.5.0",
   "name": "Tobey's BepInEx x MelonLoader Pack for Supermarket Simulator",
   "repo": "toebeann/bepinex.supermarketsimulator",
   "bepinex": "bepinex/bepinex",
   "platforms": [
-    "win_x64"
+    "win_x64",
+    "macos_x64"
   ],
   "sources": [
     "github:BepInEx/BepInEx.MelonLoader.Loader",
