@@ -68,7 +68,9 @@ If you're a glutton for punishment and would rather install it manually, follow 
 
 > [!WARNING]
 >
-> **These are instructions are not for macOS! Please refer to the [macOS](#macos) section above for instructions on installing this pack on macOS!**
+> **These are instructions are not for macOS!**
+>
+> Please refer to the [macOS](#macos) section above for instructions on installing this pack on macOS!
 
 > [!TIP]
 >
