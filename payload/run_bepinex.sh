@@ -260,5 +260,11 @@ else
     export DYLD_INSERT_LIBRARIES="${doorstop_name}:${DYLD_INSERT_LIBRARIES}"
 fi
 
+# workaround to ensure game is not codesigned so that doorstop can inject BepInEx
+app_path="${executable_path%/Contents/MacOS*}"
+if command -v codesign &>/dev/null && codesign -d "$app_path"; then
+    codesign --remove-signature "$app_path"
+fi
+
 # shellcheck disable=SC2086
 exec "$executable_path" $rest_args
