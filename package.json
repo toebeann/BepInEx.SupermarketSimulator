@@ -12,7 +12,7 @@
     "@types/bun": "latest",
     "@types/fs-extra": "^11.0.4",
     "@types/lodash.maxby": "^4.6.9",
-    "@types/node": "^22.16.0",
+    "@types/node": "^22.16.3",
     "@types/parse-github-url": "^1.0.3",
     "@types/semver": "^7.7.0"
   },
@@ -29,6 +29,6 @@
     "parse-github-url": "^1.0.3",
     "semver": "^7.7.2",
     "simple-git": "^3.28.0",
-    "zod": "^3.25.70"
+    "zod": "^3.25.76"
   }
 }
