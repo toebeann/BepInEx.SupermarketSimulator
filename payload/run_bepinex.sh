@@ -260,6 +260,16 @@ else
     export DYLD_INSERT_LIBRARIES="${doorstop_name}:${DYLD_INSERT_LIBRARIES}"
 fi
 
+# workaround to ensure game content is packaged in an .app folder
+app_path="${executable_path%/Contents/MacOS*}"
+if [[ $(basename "$app_path") != *.app ]]; then
+    real_executable_name=$(basename "$executable_path")
+    executable_path="${app_path}/${real_executable_name}.app/Contents/MacOS/${real_executable_name}"
+    target_path="${app_path}/${real_executable_name}.app/Contents"
+    mkdir -p "$target_path"
+    cp -ca "${app_path}/Contents/" "${target_path}/"
+fi
+
 # workaround to ensure game is not codesigned so that doorstop can inject BepInEx
 app_path="${executable_path%/Contents/MacOS*}"
 if command -v codesign &>/dev/null && codesign -d "$app_path"; then
