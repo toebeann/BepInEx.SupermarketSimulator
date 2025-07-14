@@ -48,21 +48,21 @@ If something doesn't go according to plan or you need further guidance, please r
 
 ### Linux and Steam Deck handhelds
 
-Same as for Windows but follow step 4 from the [full instructions](#full-instructions-for-windows-linux-and-steam-deck-handhelds) below first.
+Same as for Windows but additionally follow step 4 from the [full instructions](#full-instructions-for-windows-linux-and-steam-deck-handhelds) below.
 
 For Steam Deck handhelds, switch to Desktop mode to follow the instructions. Once you've got it all working, you'll be able to play with mods in either Desktop or Gaming mode as preferred.
 
 ### macOS
 
-[Just use gib](https://github.com/toebeann/gib). Seriously, it's way easier than manual installation on macOS.
+If you're on macOS 13 (Ventura) or later, [just use gib](https://github.com/toebeann/gib). Seriously, it's way easier than manual installation on macOS.
+
+If for whatever reason you would rather install manually (e.g. you're on an older version of macOS or are simply a glutton for punishment), follow [the idiot's guide to macOS installation](https://github.com/toebeann/BepInEx.SupermarketSimulator/wiki/Idiot's-guide-to-macOS-installation). Otherwise, refer to the steps below:
 
 1. [Download Tobey's BepInEx x MelonLoader Pack for Supermarket Simulator](https://github.com/toebeann/BepInEx.SupermarketSimulator/releases/latest/download/Tobey.s.BepInEx.x.MelonLoader.Pack.for.Supermarket.Simulator.zip). Make sure to unzip it in your Downloads folder if your browser doesn't do this automatically.
 2. Open Terminal with Launchpad or Spotlight (press `⌘ Space`, type `terminal`, press `Enter`).
 3. Copy the command from the [gib README](https://github.com/toebeann/gib#readme) and paste it into the Terminal with `⌘ V`, and press `Enter` to run it.
 
 If you get stuck, refer to the [gib README](https://github.com/toebeann/gib#readme) for help.
-
-If you're a glutton for punishment and would rather install it manually, follow [the idiot's guide to macOS installation](https://github.com/toebeann/BepInEx.SupermarketSimulator/wiki/Idiot's-guide-to-macOS-installation).
 
 ### Full instructions for Windows, Linux and Steam Deck handhelds
 
