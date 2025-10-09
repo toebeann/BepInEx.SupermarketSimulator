@@ -2,7 +2,7 @@
 
 # Tobey's BepInEx Pack for Supermarket Simulator
 
-This is a [BepInEx](https://github.com/BepInEx/BepInEx) pack for Supermarket Simulator, preconfigured and ready to use on Windows and Linux (including Steam Deck handhelds).
+This is a [BepInEx](https://github.com/BepInEx/BepInEx) pack for Supermarket Simulator, preconfigured and ready to use on Windows and Linux, including SteamOS and Steam Deck handhelds!
 
 BepInEx is a general purpose framework for Unity modding. BepInEx includes tools and libraries to
 
