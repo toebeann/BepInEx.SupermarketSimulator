@@ -21,9 +21,9 @@ BepInEx is currently [one of the most popular modding tools for Unity on GitHub]
 
 The v1.1 update to Supermarket Simulator made many significant changes to the game which collectively have rendered **all** mods broken.
 
-Any mods containing .dll files whether they are made for BepInEx or MelonLoader require updates to work, and as such we have made the decision to drop MelonLoader support since the majority of active Supermarket Simulator mod authors are using BepInEx to make and maintain their mods, and the magic glue we previously used to load MelonLoader mods with BepInEx is not supported for the latest IL2CPP game builds.
+Any mods containing .dll files, whether they were made for BepInEx or MelonLoader will need to be updated to work with the new changes to the game. As such, we have made the decision to drop MelonLoader support since the majority of active Supermarket Simulator mod developers are using BepInEx to make and maintain their mods, and the magic glue we previously used to load MelonLoader mods with BepInEx is not supported for the latest IL2CPP game builds.
 
-If you are a MelonLoader mod author, I humbly request that you please consider migrating to BepInEx moving forward - users will no longer be able to use both at the same time.
+If you are a MelonLoader mod developer, I humbly request that you please consider migrating to BepInEx moving forward - users will no longer be able to use both at the same time.
 
 ## Installation
 
@@ -53,9 +53,9 @@ For Steam Deck handhelds, switch to Desktop mode to follow the instructions. Onc
 
 Sadly, after much testing, I have not been able to find a way to get mods to load with the native macOS copy of the game with this update. While BepInEx and MelonLoader do both have IL2CPP builds for macOS, neither seem to work with this game. I have discussed with some of the maintainers of these mod loaders and at this time it seems that it is an issue that will need further investigation from them to resolve.
 
-In the meantime, this means that unfortunatley unless a solution or workaround is found, if you're playing a macOS copy of the game, you're out of luck.
+In the meantime, this means that unfortunately, if you're playing a macOS copy of the game, you're out of luck.
 
-That said, you may find some success if you are willing to use tools like CrossOver or HyperPlay etc. to install a Windows copy of Steam and the game, and configure your bottle with the environment variable `WINEDLLOVERRIDES="winhttp=n,b"`. This is not something that I will be directly supporting for the time being.
+That said, you may find some success if you are willing to use tools like CrossOver or HyperPlay to install a Windows copy of Steam and the game, and configure your bottle with the environment variable `WINEDLLOVERRIDES="winhttp=n,b"`. Please note that I offer no support for this.
 
 ### Full instructions for Windows, Linux and Steam Deck handhelds
 
@@ -100,13 +100,11 @@ That said, you may find some success if you are willing to use tools like CrossO
 
 5. Run the game from Steam as normal.
 
-    > [!NOTE]
-    >
-    > **On first launch after installing this pack, it may take a while to load and you will not see any indication that anything is happening.**
-    >
-    > This is normal, be patient and wait - BepInEx is doing work in the background to prepare the game for modding. The process will be much faster on subsequent launches.
+   **On first launch after installing this pack, it may take a while to load and you will not see any indication that anything is happening.**
 
-6. Exit the game at the main menu.
+   This is normal, be patient and wait - BepInEx is doing work in the background to prepare the game for modding. This process will be much faster on subsequent launches of the game.
+
+7. Exit the game at the main menu.
 
     Assuming you have followed these instructions correctly, inside the `Supermarket Simulator` > `BepInEx` folder there will now be a file `LogOutput.log` (or simply `LogOutput` - it's the same thing). This is your log file, and it will be regenerated every time the game runs with technical and diagnostic information about your installed mods. It's very useful for troubleshooting, and it is recommended to share it whenever asking for help with your mods. It is equivalent to the console window you might be familiar with, containing all of the same information.
 
@@ -130,9 +128,9 @@ That said, you may find some success if you are willing to use tools like CrossO
 >
 > **If a mod tells you to install MelonLoader, it is incompatible with this pack!**
 >
-> Since v1.1 of Supermarket Simulator, MelonLoader is no longer compatible with BepInEx, which means that any mods made for MelonLoader are incompatible with any mods made for BepInEx, and vice versa. Moving forward, we hope that all mod authors for Supermarket Simulator migrate to BepInEx, which the majority already are using.
+> Since v1.1 of Supermarket Simulator, MelonLoader is no longer compatible with BepInEx, which means that mods made for MelonLoader are incompatible with mods made for BepInEx. Moving forward, we hope that all mod authors for Supermarket Simulator migrate to BepInEx, which the majority already are using.
 >
-> If you do choose to install MelonLoader, BepInEx mods will stop working until you uninstall MelonLoader.
+> If you do choose to install MelonLoader, be aware that any BepInEx mods you have installed will stop working until you uninstall MelonLoader.
 
 Installing BepInEx mods is generally as simple as opening up their .zip and dragging their contents into the right folder.
 
@@ -140,9 +138,7 @@ Typically, that folder is `Supermarket Simualtor` > `BepInEx` > `plugins`, unles
 
 There may be exceptions to this basic rule, so please do make sure to read the instructions of each mod you download - but remember that if a mod specifies that it requires MelonLoader, it is _not compatible_ with this pack, and if you install MelonLoader then any mods you have installed for BepInEx will stop working until you uninstall MelonLoader.
 
-### I still can't figure it out!
-
-First, double check and follow the instructions on the mod page. If you still can't figure it out or there aren't any instructions on the mod page, you'll have to get in touch with the author of the mod somehow. Your best bet is usually going to be the Nexus Mods posts tab of that mod. Make sure to check that the question hasn't already been asked and answered.
+If you still can't figure out how to install a mod, double check and follow the instructions on the mod page. If there aren't any instructions on the mod page or you simply don't understand them, you'll have to get in touch with the author of the mod somehow. Your best bet is usually going to be the Nexus Mods posts tab of that mod. Make sure to check that the question hasn't already been asked and answered!
 
 ## Useful links for mod authors
 
