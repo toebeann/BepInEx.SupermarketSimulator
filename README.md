@@ -104,7 +104,9 @@ That said, you may find some success if you are willing to use tools like CrossO
 
    This is normal, be patient and wait - BepInEx is doing work in the background to prepare the game for modding. This process will be much faster on subsequent launches of the game, although the "first launch" process may repeat whenever the game updates.
 
-   If it never seems to complete and the game does not launch, ensure that you have internet access and that you don't have a firewall or antivirus interfering (if you do you may need to set up an exclusion or otherwise temporarily disable them for this first run of the game). In some cases, a VPN may be required to get around regional blocks.
+   If it never seems to complete and the game never launches, ensure that you have internet access and that you don't have a firewall or antivirus interfering (if you do you may need to set up an exclusion or otherwise temporarily disable them for this first run of the game). In some cases, a VPN may be required to get around regional blocks.
+
+   You can check the BepInEx log file (`BepInEx` > `LogOutput.log`) for signs that BepInEx is getting stuck downloading the Unity libraries, and if so you can try downloading them yourself from the URL provided in the log file, and then place the .zip in the `BepInEx` > `unity-libs` folder (don't extract it, just place the .zip itself in the folder). BepInEx should then use the .zip you have provided rather than attempting to download it from the internet.
 
 7. Exit the game at the main menu.
 
