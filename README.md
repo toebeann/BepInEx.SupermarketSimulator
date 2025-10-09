@@ -19,7 +19,9 @@ BepInEx is currently [one of the most popular modding tools for Unity on GitHub]
 >
 > **As of the v1.1 update to Supermarket Simulator, MelonLoader compatibility is no longer supported by this pack.**
 
-The v1.1 update to Supermarket Simulator made many significant changes to the game which collectively have rendered **all** mods broken. Any mods containing .dll files whether they are made for BepInEx or MelonLoader require updates to work, and as such we have made the decision to drop MelonLoader support since the majority of active Supermarket Simulator mod authors are using BepInEx to make and maintain their mods, and the magic glue we previously used to load MelonLoader mods with BepInEx is not supported for the latest IL2CPP game builds.
+The v1.1 update to Supermarket Simulator made many significant changes to the game which collectively have rendered **all** mods broken.
+
+Any mods containing .dll files whether they are made for BepInEx or MelonLoader require updates to work, and as such we have made the decision to drop MelonLoader support since the majority of active Supermarket Simulator mod authors are using BepInEx to make and maintain their mods, and the magic glue we previously used to load MelonLoader mods with BepInEx is not supported for the latest IL2CPP game builds.
 
 If you are a MelonLoader mod author, I humbly request that you please consider migrating to BepInEx moving forward - users will no longer be able to use both at the same time.
 
