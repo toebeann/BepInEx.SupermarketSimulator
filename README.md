@@ -75,14 +75,14 @@ That said, you may find some success if you are willing to use tools like CrossO
 
     **⚠️ _This list is used as a reference and is non-exhaustive, there will be other stuff, please don't delete anything!_**
 
-    - **`BepInEx`**
-    - **`dotnet`**
+    - _**`BepInEx`**_
+    - _**`dotnet`**_
     - `Supermarket Simulator_Data`
     - `baselib.dll`
-    - **`doorstop_config.ini`**
+    - _**`doorstop_config.ini`**_
     - `GameAssembly.dll`
     - `Supermarket Simulator.exe`
-    - **`winhttp.dll`**
+    - _**`winhttp.dll`**_
 
     **⚠️ _If you are missing any of these files or folders, you are probably installing to the wrong place, and this pack will not work._**
 
