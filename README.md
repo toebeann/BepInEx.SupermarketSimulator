@@ -35,7 +35,7 @@ If you are a MelonLoader mod developer, I humbly request that you please conside
 
 ### Windows
 
-Extract the archive into the game folder replacing any files if prompted, run the game once to generate all needed files and folders, if any prompts about MelonLoader appear just click Yes, then quit the game at the main menu and you're good to go. Remember to check the [Installing mods](#installing-mods) section below for info on how to install mods!
+Extract the archive into the game folder replacing any files if prompted, run the game once to prepare the game for modding (can take a while and requires internet access), then quit the game at the main menu and you're good to go. Remember to check the [Installing mods](#installing-mods) section below for info on how to install mods!
 
 If something doesn't go according to plan or you need further guidance, please refer to the [full instructions](#full-instructions-for-windows-linux-and-steam-deck-handhelds) below. Don't worry, it looks harder than it is. **Please don't skimread!**
 
