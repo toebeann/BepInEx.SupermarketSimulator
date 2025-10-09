@@ -102,7 +102,9 @@ That said, you may find some success if you are willing to use tools like CrossO
 
    **On first launch after installing this pack, it may take a while to load and you will not see any indication that anything is happening.**
 
-   This is normal, be patient and wait - BepInEx is doing work in the background to prepare the game for modding. This process will be much faster on subsequent launches of the game.
+   This is normal, be patient and wait - BepInEx is doing work in the background to prepare the game for modding. This process will be much faster on subsequent launches of the game, although the "first launch" process may repeat whenever the game updates.
+
+   If it never seems to complete and the game does not launch, ensure that you have internet access and that you don't have a firewall or antivirus interfering (if you do you may need to set up an exclusion or otherwise temporarily disable them for this first run of the game). In some cases, a VPN may be required to get around regional blocks.
 
 7. Exit the game at the main menu.
 
