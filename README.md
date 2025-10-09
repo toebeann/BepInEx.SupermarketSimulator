@@ -55,7 +55,7 @@ Sadly, after much testing, I have not been able to find a way to get mods to loa
 
 In the meantime, this means that unfortunately, if you're playing a macOS copy of the game, you're out of luck.
 
-That said, you may find some success if you are willing to use tools like CrossOver or HyperPlay to install a Windows copy of Steam and the game, and configure your bottle with the environment variable `WINEDLLOVERRIDES="winhttp=n,b"`. Please note that I offer no support for this.
+That said, you may find some success if you are willing to use tools like CrossOver or HyperPlay to install a Windows copy of Steam and the game, and configure your bottle with the environment variable `WINEDLLOVERRIDES="winhttp=n,b"`, or to tinker with its Wine Configuration to add `winhttp` as an override in the **Libraries** tab. Please note that I offer no support for this.
 
 ### Full instructions for Windows, Linux and Steam Deck handhelds
 
