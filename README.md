@@ -100,15 +100,19 @@ That said, you may find some success if you are willing to use tools like CrossO
 
 5. Run the game from Steam as normal.
 
-   **On first launch after installing this pack, it may take a while to load and you will not see any indication that anything is happening.**
+    **On first launch after installing this pack, it may take a while to load and you will not see any indication that anything is happening.**
 
-   This is normal, be patient and wait - BepInEx is doing work in the background to prepare the game for modding. This process will be much faster on subsequent launches of the game, although the "first launch" process may repeat whenever the game updates.
+    This is normal, be patient and wait - BepInEx is doing work in the background to prepare the game for modding. This process will be much faster on subsequent launches of the game, although the "first launch" process may repeat whenever the game updates.
 
-   If it never seems to complete and the game never launches, ensure that you have internet access and that you don't have a firewall or antivirus interfering (if you do you may need to set up an exclusion or otherwise temporarily disable them for this first run of the game). In some cases, a VPN may be required to get around regional blocks.
+> [!TIP]
+>
+> **If the first launch never seems to complete and the game does not open, BepInEx may be having trouble downloading required files.**
+>
+> Please ensure that you have internet access and that you don't have a firewall or antivirus interfering - if you do you may need to set up an exclusion or otherwise temporarily disable them for this first run of the game. In some cases, a VPN may be required to get around regional blocks.
+>
+> You can check the BepInEx log file (`BepInEx` > `LogOutput.log`) for signs that BepInEx is getting stuck downloading the Unity libraries, and if so you can try downloading them yourself from the URL provided in the log file, and then place the .zip in the `BepInEx` > `unity-libs` folder (don't extract it, just place the .zip itself in the folder). BepInEx should then use the .zip you have provided rather than attempting to download it from the internet.
 
-   You can check the BepInEx log file (`BepInEx` > `LogOutput.log`) for signs that BepInEx is getting stuck downloading the Unity libraries, and if so you can try downloading them yourself from the URL provided in the log file, and then place the .zip in the `BepInEx` > `unity-libs` folder (don't extract it, just place the .zip itself in the folder). BepInEx should then use the .zip you have provided rather than attempting to download it from the internet.
-
-7. Exit the game at the main menu.
+6. Exit the game at the main menu.
 
     Assuming you have followed these instructions correctly, inside the `Supermarket Simulator` > `BepInEx` folder there will now be a file `LogOutput.log` (or simply `LogOutput` - it's the same thing). This is your log file, and it will be regenerated every time the game runs with technical and diagnostic information about your installed mods. It's very useful for troubleshooting, and it is recommended to share it whenever asking for help with your mods. It is equivalent to the console window you might be familiar with, containing all of the same information.
 
