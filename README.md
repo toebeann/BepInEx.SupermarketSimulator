@@ -17,11 +17,13 @@ BepInEx is currently [one of the most popular modding tools for Unity on GitHub]
 
 > [!IMPORTANT]
 >
-> **As of the v1.1 update to Supermarket Simulator, MelonLoader compatibility is no longer supported by this pack.**
+> **As of Supermarket Simulator v1.1 (the co-op update), MelonLoader compatibility is no longer supported by this pack.**
 
-The v1.1 update to Supermarket Simulator made many significant changes to the game which collectively have rendered **all** mods broken.
+_The Supermarket Simulator co-op update (v1.1) to Supermarket Simulator made many significant changes to the game which collectively have rendered **all** mods broken._
 
-Any mods containing .dll files, whether they were made for BepInEx or MelonLoader will need to be updated to work with the new changes to the game. As such, we have made the decision to drop MelonLoader support since the majority of active Supermarket Simulator mod developers are using BepInEx to make and maintain their mods, and the magic glue we previously used to load MelonLoader mods with BepInEx is not supported for the latest IL2CPP game builds.
+**All** mods containing .dll files need to be updated to work with the new changes to the game. That includes **all** BepInEx and MelonLoader mods. If a mod has not been updated since the co-op update came out, it simply **will not work**.
+
+As such, we have made the decision to drop MelonLoader support since the majority of active Supermarket Simulator mod developers are using BepInEx to make and maintain their mods, and the magic glue we previously used to load MelonLoader mods with BepInEx does not support the latest IL2CPP game builds.
 
 If you are a MelonLoader mod developer, I humbly request that you please consider migrating to BepInEx moving forward - users will no longer be able to use both at the same time.
 
@@ -29,7 +31,7 @@ If you are a MelonLoader mod developer, I humbly request that you please conside
 
 > [!TIP]
 >
-> **Make sure to check out the [Installing mods](#installing-mods) section below once you have finished installing this pack!**
+> **Make sure to check out the [Installing mods](#installing-mods) section once you have finished installing this pack!**
 
 ### Quick start
 
@@ -49,13 +51,13 @@ For Steam Deck handhelds, switch to Desktop mode to follow the instructions. Onc
 
 > [!IMPORTANT]
 >
-> **As of the v1.1 update to Supermarket Simulator, macOS is no longer directly supported by this pack.**
+> **As of Supermarket Simulator v1.1 (the co-op update), macOS is no longer directly supported by this pack.**
 
 Sadly, after much testing, I have not been able to find a way to get mods to load with the native macOS copy of the game with this update. While BepInEx and MelonLoader do both have IL2CPP builds for macOS, neither seem to work with this game. I have discussed with some of the maintainers of these mod loaders and at this time it seems that it is an issue that will need further investigation from them to resolve.
 
 In the meantime, this means that unfortunately, if you're playing a macOS copy of the game, you're out of luck.
 
-That said, you may find some success if you are willing to use tools like CrossOver or HyperPlay to install a Windows copy of Steam and the game, and configure your bottle with the environment variable `WINEDLLOVERRIDES="winhttp=n,b"`, or to tinker with its Wine Configuration to add `winhttp` as an override in the **Libraries** tab. Please note that I offer no support for this.
+That said, you may find some success if you are willing to use tools like CrossOver or HyperPlay to install a Windows copy of Steam and the game, and configure your bottle with the environment variable `WINEDLLOVERRIDES="winhttp=n,b"` or to modify its Wine Configuration to add `winhttp` as an override in the **Libraries** tab. Please note that I offer no support for this.
 
 ### Full instructions for Windows, Linux and Steam Deck handhelds
 
@@ -103,14 +105,6 @@ That said, you may find some success if you are willing to use tools like CrossO
     **On first launch after installing this pack, it may take a while to load and you will not see any indication that anything is happening.**
 
     This is normal, be patient and wait - BepInEx is doing work in the background to prepare the game for modding. This process will be much faster on subsequent launches of the game, although the "first launch" process may repeat whenever the game updates.
-
-> [!TIP]
->
-> **If the first launch never seems to complete and the game does not open, BepInEx may be having trouble downloading required files.**
->
-> Please ensure that you have internet access and that you don't have a firewall or antivirus interfering - if you do you may need to set up an exclusion or otherwise temporarily disable them for this first run of the game. In some cases, a VPN may be required to get around regional blocks.
->
-> You can check the BepInEx log file (`BepInEx` > `LogOutput.log`) for signs that BepInEx is getting stuck downloading the Unity libraries, and if so you can try downloading them yourself from the URL provided in the log file, and then place the .zip in the `BepInEx` > `unity-libs` folder (don't extract it, just place the .zip itself in the folder). BepInEx should then use the .zip you have provided rather than attempting to download it from the internet.
 
 6. Exit the game at the main menu.
 
