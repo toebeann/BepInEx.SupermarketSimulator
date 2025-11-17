@@ -187,7 +187,7 @@ However, the .zip released by this repository contains binaries from the followi
 | Project                                                                        | License(s)                                                                        |
 | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
 | [BepInEx](https://github.com/BepInEx/BepInEx)                                  | [LGPL-2.1](https://github.com/BepInEx/BepInEx/blob/master/LICENSE)                |
-| [Tobey.BepInEx.GameInfo](https://github.com/toebeann/BepInEx.GameInfo)         | [LGPL-3.0](https://github.com/toebeann/BepInEx.GameInfo/blob/main/LICENSE)        |
+| [Tobey.BepInEx.GameInfo](https://github.com/toebeann/Tobey.BepInEx.GameInfo)   | [LGPL-3.0](https://github.com/toebeann/Tobey.BepInEx.GameInfo/blob/main/LICENSE)  |
 | [Tobey.FileTree](https://github.com/toebeann/Tobey.FileTree)                   | [LGPL-3.0](https://github.com/toebeann/Tobey.FileTree/blob/main/LICENSE)          |
 | [Tobey.BepInEx.Timestamp](https://github.com/toebeann/Tobey.BepInEx.Timestamp) | [LGPL-3.0](https://github.com/toebeann/Tobey.BepInEx.Timestamp/blob/main/LICENSE) |
 
