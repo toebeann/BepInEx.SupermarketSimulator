@@ -13,19 +13,24 @@ BepInEx is a general purpose framework for Unity modding. BepInEx includes tools
 
 BepInEx is currently [one of the most popular modding tools for Unity on GitHub](https://github.com/topics/modding?o=desc&s=stars).
 
-## Compatibility with MelonLoader
+## This pack's contents
 
-> [!IMPORTANT]
->
-> **As of Supermarket Simulator v1.1 (the co-op update), MelonLoader compatibility is no longer supported by this pack.**
+This pack is preconfigured and ready to use for Supermarket Simulator modding.\
+In particular, this pack comes with:
 
-_The Supermarket Simulator co-op update (v1.1) to Supermarket Simulator made many significant changes to the game which collectively have rendered **all** mods broken._
+-   [Tobey's Game Info Logger for BepInEx](https://github.com/toebeann/Tobey.BepInEx.GameInfo), a simple BepInEx plugin to log information about the currently loaded Unity game.
+-   [Tobey's File Tree Logger for BepInEx](https://github.com/toebeann/Tobey.FileTree), a configurable BepInEx plugin which logs the game's file tree to aid in troubleshooting issues,
+-   [Tobey's Timestamp Logger for BepInEx](https://github.com/toebeann/Tobey.BepInEx.Timestamp), a configurable BepInEx patcher which logs the current timestamp, and
 
-**All** mods containing .dll files need to be updated to work with the new changes to the game. That includes **all** BepInEx and MelonLoader mods. If a mod has not been updated since the co-op update came out, it simply **will not work**.
+## IMPORTANT NOTES
+
+_The Supermarket Simulator co-op update (v1.1) made many significant changes to the game which collectively have rendered **all** mods broken._
+
+**All** mods containing .dll files need to be updated to work with the new changes to the game. That includes **all** BepInEx and MelonLoader mods. If a mod has not been updated since the co-op update came out on October 8th 2025, it simply **will not work**.
 
 As such, we have made the decision to drop MelonLoader support since the majority of active Supermarket Simulator mod developers are using BepInEx to make and maintain their mods, and the magic glue we previously used to load MelonLoader mods with BepInEx does not support the latest IL2CPP game builds.
 
-If you are a MelonLoader mod developer, I humbly request that you please consider migrating to BepInEx moving forward - users will no longer be able to use both at the same time.
+Additionally, the game is now running on the IL2CPP runtime rather than mono, which poses a significant challenge when it comes to even making a game moddable, let alone creating mods. Be prepared for everything to break whenever a new Supermarket Simulator patch comes out. If the game is crashing when you launch it, remove all mods you have installed from the `BepInEx` > `plugins` folder (e.g. you could just rename the folder something like "\_plugins"), and run the game again. If you manage to launch the game without crashes, your next step is to slowly add your mods back one at a time, testing them individually to see which are causing crashes. **It would be wise to run all tests on a brand new save file to avoid corrupting your ongoing saves**.
 
 ## Installation
 
@@ -33,11 +38,19 @@ If you are a MelonLoader mod developer, I humbly request that you please conside
 >
 > **Make sure to check out the [Installing mods](#installing-mods) section once you have finished installing this pack!**
 
+> [!TIP]
+>
+> **The game folder is the folder containing the game's executable (e.g. `Supermarket Simulator.exe`).**
+>
+> Steam users can find this folder by right-clicking the game in their library and selecting `Manage` > `Browse local files`.
+>
+> PC Game Pass users can find this folder by right-clicking the game in their library, selecting `Manage`, navigating to the `Files` tab, clicking `Browse...` and finally navigating into the `Supermarket Simulator` > `Content` folder.
+
 ### Quick start
 
 ### Windows
 
-Extract the archive into the game folder replacing any files if prompted, run the game once to prepare the game for modding (can take a while and requires internet access), then quit the game at the main menu and you're good to go. Remember to check the [Installing mods](#installing-mods) section below for info on how to install mods!
+Extract the archive into the game folder replacing any files if prompted, run the game once to prepare the game for modding (can take a while and may sometimes require internet access), then quit the game at the main menu and you're good to go. Remember to check the [Installing mods](#installing-mods) section below for info on how to install mods!
 
 If something doesn't go according to plan or you need further guidance, please refer to the [full instructions](#full-instructions-for-windows-linux-and-steam-deck-handhelds) below. Don't worry, it looks harder than it is. **Please don't skimread!**
 
@@ -65,7 +78,9 @@ That said, you may find some success if you are willing to use tools like CrossO
 >
 > **The game folder is the folder containing the game's executable (e.g. `Supermarket Simulator.exe`).**
 >
-> Steam users can find the game folder by right-clicking the game in their Steam library and selecting `Manage` > `Browse local files`.
+> Steam users can find this folder by right-clicking the game in their library and selecting `Manage` > `Browse local files`.
+>
+> PC Game Pass users can find this folder by right-clicking the game in their library, selecting `Manage`, navigating to the `Files` tab, clicking `Browse...` and finally navigating into the `Supermarket Simulator` > `Content` folder.
 
 1. [Download Tobey's BepInEx Pack for Supermarket Simulator](https://github.com/toebeann/BepInEx.SupermarketSimulator/releases/latest/download/Tobey.s.BepInEx.Pack.for.Supermarket.Simulator.zip).
 2. Make sure the game is not running.
@@ -73,7 +88,7 @@ That said, you may find some success if you are willing to use tools like CrossO
 
     **ℹ️** _That just means open the .zip file and drag the files and folders out into the game folder!_
 
-    If done correctly, inside your `steamapps` > `common` > `Supermarket Simulator` folder it should look something like this (the entries in bold being from the pack):
+    If done correctly, inside your game folder it should look something like this (the entries in bold being from the pack):
 
     **⚠️ _This list is used as a reference and is non-exhaustive, there will be other stuff, please don't delete anything!_**
 
@@ -108,7 +123,7 @@ That said, you may find some success if you are willing to use tools like CrossO
 
 6. Exit the game at the main menu.
 
-    Assuming you have followed these instructions correctly, inside the `Supermarket Simulator` > `BepInEx` folder there will now be a file `LogOutput.log` (or simply `LogOutput` - it's the same thing). This is your log file, and it will be regenerated every time the game runs with technical and diagnostic information about your installed mods. It's very useful for troubleshooting, and it is recommended to share it whenever asking for help with your mods. It is equivalent to the console window you might be familiar with, containing all of the same information.
+    Assuming you have followed these instructions correctly, inside the `BepInEx` folder there will now be a file `LogOutput.log` (or simply `LogOutput` - it's the same thing). This is your log file, and it will be regenerated every time the game runs with technical and diagnostic information about your installed mods. It's very useful for troubleshooting, and it is recommended to share it whenever asking for help with your mods. It is equivalent to the console window you might be familiar with, containing all of the same information.
 
     If this file is missing, it usually means that you have not installed the pack correctly and you should probably try again from scratch. Make sure to pay careful attention to the instructions and don't skimread any of the steps.
 
@@ -118,7 +133,7 @@ That said, you may find some success if you are willing to use tools like CrossO
 >
 > **With just this pack installed, you will not see any changes in-game!**
 >
-> Check the file `Supermarket Simulator` > `BepInEx` > `LogOutput.log` to determine whether BepInEx has loaded.
+> Check the file `BepInEx` > `LogOutput.log` to determine whether BepInEx has loaded.
 
 ## Installing mods
 
@@ -136,7 +151,7 @@ That said, you may find some success if you are willing to use tools like CrossO
 
 Installing BepInEx mods is generally as simple as opening up their .zip and dragging their contents into the right folder.
 
-Typically, that folder is `Supermarket Simualtor` > `BepInEx` > `plugins`, unless the mod's instructions say otherwise.
+Typically, that folder is `BepInEx` > `plugins`, unless the mod's instructions say otherwise.
 
 There may be exceptions to this basic rule, so please do make sure to read the instructions of each mod you download - but remember that if a mod specifies that it requires MelonLoader, it is _not compatible_ with this pack, and if you install MelonLoader then any mods you have installed for BepInEx will stop working until you uninstall MelonLoader.
 
@@ -169,8 +184,11 @@ This GitHub repository contains no code or binaries from external sources.
 
 However, the .zip released by this repository contains binaries from the following projects, redistributed without modification and in accordance with their licenses:
 
-| Project                                       | License(s)                                                         |
-| --------------------------------------------- | ------------------------------------------------------------------ |
-| [BepInEx](https://github.com/BepInEx/BepInEx) | [LGPL-2.1](https://github.com/BepInEx/BepInEx/blob/master/LICENSE) |
+| Project                                                                        | License(s)                                                                        |
+| ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| [BepInEx](https://github.com/BepInEx/BepInEx)                                  | [LGPL-2.1](https://github.com/BepInEx/BepInEx/blob/master/LICENSE)                |
+| [Tobey.BepInEx.GameInfo](https://github.com/toebeann/BepInEx.GameInfo)         | [LGPL-3.0](https://github.com/toebeann/BepInEx.GameInfo/blob/main/LICENSE)        |
+| [Tobey.FileTree](https://github.com/toebeann/Tobey.FileTree)                   | [LGPL-3.0](https://github.com/toebeann/Tobey.FileTree/blob/main/LICENSE)          |
+| [Tobey.BepInEx.Timestamp](https://github.com/toebeann/Tobey.BepInEx.Timestamp) | [LGPL-3.0](https://github.com/toebeann/Tobey.BepInEx.Timestamp/blob/main/LICENSE) |
 
 The code in this repository is licensed under the [LGPL-3.0 license](https://github.com/toebeann/BepInEx.SupermarketSimulator/blob/main/LICENSE).
