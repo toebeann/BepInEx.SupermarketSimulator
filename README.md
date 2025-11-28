@@ -4,18 +4,6 @@
 
 This is a [BepInEx](https://github.com/BepInEx/BepInEx) pack for Supermarket Simulator, preconfigured and ready to use on Windows and Linux, including SteamOS and Steam Deck handhelds!
 
-BepInEx is a general purpose framework for Unity modding. BepInEx includes tools and libraries to
-
--   load custom code (hereafter _plugins_) into the game on launch;
--   patch in-game methods, classes and even entire assemblies without touching original game files;
--   configure plugins and log game to desired outputs like console or file;
--   manage plugin dependencies.
-
-BepInEx is currently [one of the most popular modding tools for Unity on GitHub](https://github.com/topics/modding?o=desc&s=stars).
-
-## This pack's contents
-
-This pack is preconfigured and ready to use for Supermarket Simulator modding.\
 In particular, this pack comes with:
 
 -   [Tobey's Game Info Logger for BepInEx](https://github.com/toebeann/Tobey.BepInEx.GameInfo), a simple BepInEx plugin to log information about the currently loaded Unity game,
@@ -24,13 +12,13 @@ In particular, this pack comes with:
 
 ## IMPORTANT NOTES
 
-_The Supermarket Simulator co-op update (v1.1) made many significant changes to the game which collectively have rendered **all** mods broken._
+**Only BepInEx mods updated for the Supermarket Simulator co-op update (v1.1 or newer) will work!**
 
-**All** mods containing .dll files need to be updated to work with the new changes to the game. That includes **all** BepInEx and MelonLoader mods. If a mod has not been updated since the co-op update came out on October 8th 2025, it simply **will not work**.
+BepInEx mods which have not been updated since the co-op update released on October 8th 2025 **will not work**.
 
-As such, we have made the decision to drop MelonLoader support since the majority of active Supermarket Simulator mod developers are using BepInEx to make and maintain their mods, and the magic glue we previously used to load MelonLoader mods with BepInEx does not support the latest IL2CPP game builds.
+[To browse mods which have been updated since October 8th 2025, click here.](https://www.nexusmods.com/games/supermarketsimulator/mods?timeRange=2025-10-09|&sort=updatedAt)
 
-Additionally, the game is now running on the IL2CPP runtime rather than mono, which poses a significant challenge when it comes to even making a game moddable, let alone creating mods. Be prepared for everything to break whenever a new Supermarket Simulator patch comes out. If the game is crashing when you launch it, remove all mods you have installed from the `BepInEx` > `plugins` folder (e.g. you could just rename the folder something like "\_plugins"), and run the game again. If you manage to launch the game without crashes, your next step is to slowly add your mods back one at a time, testing them individually to see which are causing crashes. **It would be wise to run all tests on a brand new save file to avoid corrupting your ongoing saves**.
+Unless otherwise stated, add-on packs (e.g. texture packs for TextureReplacer, product packs for MoreProducts, etc.) are **not** affected. In other words, you can use texture/product packs which have not been updated, as these packs are not themselves BepInEx mods. You do of course still need to update TextureReplacer and/or MoreProducts, though!
 
 ## Installation
 
@@ -50,7 +38,7 @@ Additionally, the game is now running on the IL2CPP runtime rather than mono, wh
 
 ### Windows
 
-Extract the archive into the game folder replacing any files if prompted, run the game once to prepare the game for modding (can take a while and may sometimes require internet access), then quit the game at the main menu and you're good to go. Remember to check the [Installing mods](#installing-mods) section below for info on how to install mods!
+Extract the .zip into the game folder replacing any files if prompted, run the game once to prepare the game for modding (it can take a while for the game to launch, be patient), then quit the game at the main menu and you're good to go. Remember to check the [Installing mods](#installing-mods) section below for info on how to install mods!
 
 If something doesn't go according to plan or you need further guidance, please refer to the [full instructions](#full-instructions-for-windows-linux-and-steam-deck-handhelds) below. Don't worry, it looks harder than it is. **Please don't skimread!**
 
@@ -62,15 +50,9 @@ For Steam Deck handhelds, switch to Desktop mode to follow the instructions. Onc
 
 ### macOS
 
-> [!IMPORTANT]
->
-> **As of Supermarket Simulator v1.1 (the co-op update), macOS is no longer directly supported by this pack.**
+Sadly, after much testing, I have not been able to find a way to get mods to load with the native macOS copy of the game since Supermarket Simulator v1.1 released. While BepInEx and MelonLoader do both have IL2CPP builds for macOS, neither seem to work with this game. I have discussed with some of the maintainers of these mod loaders and at this time it seems that it is an issue that will not be resolved for the foreseeable future. This means that unfortunately, if you're playing a macOS copy of the game, you're out of luck.
 
-Sadly, after much testing, I have not been able to find a way to get mods to load with the native macOS copy of the game with this update. While BepInEx and MelonLoader do both have IL2CPP builds for macOS, neither seem to work with this game. I have discussed with some of the maintainers of these mod loaders and at this time it seems that it is an issue that will need further investigation from them to resolve.
-
-In the meantime, this means that unfortunately, if you're playing a macOS copy of the game, you're out of luck.
-
-That said, you may find some success if you are willing to use tools like CrossOver or HyperPlay to install a Windows copy of Steam and the game, and configure your bottle with the environment variable `WINEDLLOVERRIDES="winhttp=n,b"` or to modify its Wine Configuration to add `winhttp` as an override in the **Libraries** tab. Please note that I offer no support for this.
+That said, you may find some success if you are willing to use tools like CrossOver or HyperPlay to install a Windows copy of Steam and the game, and then configure your bottle with the environment variable `WINEDLLOVERRIDES="winhttp=n,b"` or modify its Wine Configuration to add `winhttp` as an override in the **Libraries** tab. Please note that I offer no support for this.
 
 ### Full instructions for Windows, Linux and Steam Deck handhelds
 
@@ -86,18 +68,15 @@ That said, you may find some success if you are willing to use tools like CrossO
 2. Make sure the game is not running.
 3. Extract the contents of the downloaded archive into the game folder. Replace any files if prompted.\
 
-    **ℹ️** _That just means open the .zip file and drag the files and folders out into the game folder!_
+    **ℹ️** _That just means open the .zip file and drag-and-drop the files and folders out into the game folder!_
 
     If done correctly, inside your game folder it should look something like this (the entries in bold being from the pack):
 
     **⚠️ _This list is used as a reference and is non-exhaustive, there will be other stuff, please don't delete anything!_**
 
     - _**`BepInEx`**_
-    - _**`dotnet`**_
     - `Supermarket Simulator_Data`
-    - `baselib.dll`
     - _**`doorstop_config.ini`**_
-    - `GameAssembly.dll`
     - `Supermarket Simulator.exe`
     - _**`winhttp.dll`**_
 
@@ -111,7 +90,7 @@ That said, you may find some success if you are willing to use tools like CrossO
     WINEDLLOVERRIDES="winhttp=n,b" %command%
     ```
 
-    **⚠️ _Do not set the launch options if you play the game on Windows!_**
+    **⚠️ _Do not set the launch options if you play the game on Windows, or the game won't run!_**
 
     **ℹ️** _If preferred, Linux users can instead set the Wine configuration (`winecfg`) for the game to add `winhttp` as a DLL override via the `Libraries` tab. Remove the launch options if applicable. [Full instructions here](https://docs.bepinex.dev/articles/advanced/proton_wine.html)._
 
@@ -119,7 +98,9 @@ That said, you may find some success if you are willing to use tools like CrossO
 
     **On first launch after installing this pack, it may take a while to load and you will not see any indication that anything is happening.**
 
-    This is normal, be patient and wait - BepInEx is doing work in the background to prepare the game for modding. This process will be much faster on subsequent launches of the game, although the "first launch" process may repeat whenever the game updates.
+    This is normal, please be patient and wait - BepInEx is doing some work in the background to prepare the game for modding. This process will be much faster on subsequent launches of the game, although the "first launch" process may repeat whenever the game updates.
+
+    If you get stuck here and you have installed a third-party antivirus, it could be interfering with the set up process, so check for that and if you think it's blocking BepInEx then look up how to set up exclusions for your antivirus in its documentation - you may need to set it to exclude the `BepInEx` > `unity-libs` folder, possibly also `BepInEx` > `core`.
 
 6. Exit the game at the main menu.
 
@@ -157,14 +138,6 @@ There may be exceptions to this basic rule, so please do make sure to read the i
 
 If you still can't figure out how to install a mod, double check and follow the instructions on the mod page. If there aren't any instructions on the mod page or you simply don't understand them, you'll have to get in touch with the author of the mod somehow. Your best bet is usually going to be the Nexus Mods posts tab of that mod. Make sure to check that the question hasn't already been asked and answered!
 
-## Useful links for mod authors
-
--   [Doorstop: debugging Unity IL2CPP games](https://github.com/NeighTools/UnityDoorstop#debugging-in-il2cpp)
--   [BepInEx: writing basic plugin walkthrough](https://docs.bepinex.dev/master/articles/dev_guide/plugin_tutorial/index.html)
--   [BepInEx: useful plugins for modding](https://docs.bepinex.dev/master/articles/dev_guide/dev_tools.html)
--   [BepInEx: patching game methods at runtime](https://docs.bepinex.dev/master/articles/dev_guide/runtime_patching.html)
--   [Modded Supermarket Simulator Discord](https://discord.gg/hjGpjB3GXA)
-
 ## Issues, questions, etc.
 
 First, please make sure to check that the answer you're looking for isn't already somewhere on this page. Use Ctrl+F to search for keywords.
@@ -176,7 +149,14 @@ If not, you can use the following channels to ask for help:
 -   [Modded Supermarket Simulator Discord](https://discord.gg/hjGpjB3GXA)
 -   [Nexus Mods posts tab](https://www.nexusmods.com/supermarketsimulator/mods/9/?tab=posts)
 -   [GitHub issues](https://github.com/toebeann/BepInEx.SupermarketSimulator/issues)
--   [BepInEx Discord](https://discord.gg/MpFEDAg) -- **Intended for developers, only technical support for BepInEx itself will be provided. No support for mods.**
+
+## Useful links for mod authors
+
+-   [Doorstop: debugging Unity IL2CPP games](https://github.com/NeighTools/UnityDoorstop#debugging-in-il2cpp)
+-   [BepInEx: writing basic plugin walkthrough](https://docs.bepinex.dev/master/articles/dev_guide/plugin_tutorial/index.html)
+-   [BepInEx: useful plugins for modding](https://docs.bepinex.dev/master/articles/dev_guide/dev_tools.html)
+-   [BepInEx: patching game methods at runtime](https://docs.bepinex.dev/master/articles/dev_guide/runtime_patching.html)
+-   [Modded Supermarket Simulator Discord](https://discord.gg/hjGpjB3GXA)
 
 ## Licensing
 
