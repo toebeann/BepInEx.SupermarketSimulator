@@ -157,6 +157,7 @@ If not, you can use the following channels to ask for help:
 -   [BepInEx: writing basic plugin walkthrough](https://docs.bepinex.dev/master/articles/dev_guide/plugin_tutorial/index.html)
 -   [BepInEx: useful plugins for modding](https://docs.bepinex.dev/master/articles/dev_guide/dev_tools.html)
 -   [BepInEx: patching game methods at runtime](https://docs.bepinex.dev/master/articles/dev_guide/runtime_patching.html)
+-   [UniverseLib: wiki](https://github.com/sinai-dev/UniverseLib/wiki/Initialization)
 -   [Modded Supermarket Simulator Discord](https://discord.gg/hjGpjB3GXA)
 
 ## Licensing
