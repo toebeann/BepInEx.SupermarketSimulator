@@ -37,19 +37,19 @@ Unless otherwise stated, add-on packs (e.g. texture packs for TextureReplacer, p
 
 ### Quick start
 
-### Windows
+#### Windows
 
 Extract the .zip into the game folder replacing any files if prompted, run the game once to prepare the game for modding (it can take a while for the game to launch, be patient), then quit the game at the main menu and you're good to go. Remember to check the [Installing mods](#installing-mods) section below for info on how to install mods!
 
 If something doesn't go according to plan or you need further guidance, please refer to the [full instructions](#full-instructions-for-windows-linux-and-steam-deck-handhelds) below. Don't worry, it looks harder than it is. **Please don't skimread!**
 
-### Linux and Steam Deck handhelds
+#### Linux and Steam Deck handhelds
 
 Same as for Windows but additionally follow step 4 from the [full instructions](#full-instructions-for-windows-linux-and-steam-deck-handhelds) below.
 
 For Steam Deck handhelds, switch to Desktop mode to follow the instructions. Once you've got it all working, you'll be able to play with mods in either Desktop or Gaming mode as preferred.
 
-### macOS
+#### macOS
 
 Sadly, after much testing, I have not been able to find a way to get mods to load with the native macOS copy of the game since Supermarket Simulator v1.1 released. While BepInEx and MelonLoader do both have IL2CPP builds for macOS, neither seem to work with this game. I have discussed with some of the maintainers of these mod loaders and at this time it seems that it is an issue that will not be resolved for the foreseeable future. This means that unfortunately, if you're playing a macOS copy of the game, you're out of luck.
 
