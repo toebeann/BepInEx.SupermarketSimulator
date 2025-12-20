@@ -87,7 +87,7 @@ That said, you may find some success if you are willing to use tools like CrossO
 
     Linux and Steam Deck handheld users: go to your Steam library, right-click the game, select `Properties...` and set the launch options:
 
-    ```
+    ```sh
     WINEDLLOVERRIDES="winhttp=n,b" %command%
     ```
 
