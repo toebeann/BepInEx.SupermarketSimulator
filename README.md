@@ -6,6 +6,7 @@ This is a [BepInEx](https://github.com/BepInEx/BepInEx) pack for Supermarket Sim
 
 In particular, this pack comes with:
 
+- [BepInEx Loading Progress Splash Screen](https://github.com/BepInEx/BepInEx.SplashScreen), a BepInEx patcher that displays a loading screen on game startup,
 - [Tobey's Game Info Logger for BepInEx](https://github.com/toebeann/Tobey.BepInEx.GameInfo), a simple BepInEx plugin to log information about the currently loaded Unity game,
 - [Tobey's File Tree Logger for BepInEx](https://github.com/toebeann/Tobey.FileTree), a configurable BepInEx plugin which logs the game's file tree to aid in troubleshooting issues,
 - [Tobey's Timestamp Logger for BepInEx](https://github.com/toebeann/Tobey.BepInEx.Timestamp), a configurable BepInEx patcher which logs the current timestamp, and
@@ -39,7 +40,7 @@ Unless otherwise stated, add-on packs (e.g. texture packs for TextureReplacer, p
 
 #### Windows
 
-Extract the .zip into the game folder replacing any files if prompted, run the game once to prepare the game for modding (it can take a couple of minutes before you will see anything happening, be patient), then quit the game at the main menu and you're good to go. Remember to check the [Installing mods](#installing-mods) section below for info on how to install mods!
+Extract the .zip into the game folder replacing any files if prompted, run the game once to prepare the game for modding (it can take a couple of minutes before you will see anything happening, be patient), then quit the game at the main menu and assuming you saw the BepInEx loading screen you're good to go. Remember to check the [Installing mods](#installing-mods) section below for info on how to install mods!
 
 If something doesn't go according to plan or you need further guidance, please refer to the [full instructions](#full-instructions-for-windows-linux-and-steam-deck-handhelds) below. Don't worry, it looks harder than it is. **Please don't skimread!**
 
@@ -96,7 +97,7 @@ That said, you may find some success if you are willing to use tools like CrossO
 
 5.  Run the game from Steam as normal.
 
-    **⚠️ _On first launch after installing this pack (or whenever the game updates), it can take a few minutes before you will see anything happening._**
+    **⚠️ _On first launch after installing this pack and whenever the game updates, it can take a few minutes before you will see anything happening._**
 
     This is normal, please be patient and wait - BepInEx is doing some work in the background to prepare the game for modding. This process will be much faster on subsequent launches of the game, although the "first launch" process may repeat whenever the game updates. If you launched via Steam and it shows the game is running in your Steam library, just be patient with it and wait. For PC Game Pass, as long as you see the "Launching game..." window just wait.
 
@@ -104,19 +105,15 @@ That said, you may find some success if you are willing to use tools like CrossO
 
     The necessary modding preparation BepInEx needs to do can sometimes get flagged by antivirus as suspicious, so check for that and if you think BepInEx is getting blocked then you'll want to look up how to set up folder exclusions in your antivirus software's documentation. The folders you'll want to exclude are `BepInEx` > `unity-libs` and possibly `BepInEx` > `core`. If your antivirus is very strict you may be better off setting an exclusion for the entire `BepInEx` folder, but be aware that any mods you install will not be getting scanned by your antivirus if you exclude the entire `BepInEx` folder, and I will not be held liable if you install a mod that carries a virus (most mods on Nexus Mods should be clean though, see [Virus Scanning at Nexus Mods](https://help.nexusmods.com/article/128-anti-virus-false-positives) for info).
 
+    You'll know the modding set up process has completed and BepInEx is working when a loading screen pops up. This screen will disappear once your mods have finished loading.
+
 6.  Exit the game at the main menu.
 
 Assuming you have followed these instructions correctly, inside the `BepInEx` folder there will now be a file `LogOutput.log` (or simply `LogOutput` - it's the same thing). This is your log file, and it will be regenerated every time the game runs with technical and diagnostic information about your installed mods. It's very useful for troubleshooting, and it is recommended to share it whenever asking for help with your mods. It is equivalent to the console window you might be familiar with, containing all of the same information.
 
-If this file is missing, it usually means that you have not installed the pack correctly and you should probably try again from scratch. Make sure to pay careful attention to the instructions and don't skimread any of the steps.
+If this file is missing or you didn't see the loading screen, it usually means that you have not installed the pack correctly and you should probably try again from scratch. Make sure to pay careful attention to the instructions and don't skimread any of the steps.
 
-Otherwise, you can now install mods according to the [Installing mods](#installing-mods) section below.
-
-> [!IMPORTANT]
->
-> **With just this pack installed, you will not see any changes in-game!**
->
-> Check the file `BepInEx` > `LogOutput.log` to determine whether BepInEx has loaded.
+Otherwise, if you saw the loading screen and your log file has been generated, you can now install mods according to the [Installing mods](#installing-mods) section below.
 
 ## Installing mods
 
@@ -172,6 +169,7 @@ However, the .zip released by this repository contains binaries from the followi
 | Project                                                                        | License(s)                                                                        |
 | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
 | [BepInEx](https://github.com/BepInEx/BepInEx)                                  | [LGPL-2.1](https://github.com/BepInEx/BepInEx/blob/master/LICENSE)                |
+| [BepInEx.SplashScreen](https://github.com/BepInEx/BepInEx.SplashScreen)        | [MIT](https://github.com/BepInEx/BepInEx.SplashScreen/blob/main/LICENSE)          |
 | [Tobey.BepInEx.GameInfo](https://github.com/toebeann/Tobey.BepInEx.GameInfo)   | [LGPL-3.0](https://github.com/toebeann/Tobey.BepInEx.GameInfo/blob/main/LICENSE)  |
 | [Tobey.BepInEx.Timestamp](https://github.com/toebeann/Tobey.BepInEx.Timestamp) | [LGPL-3.0](https://github.com/toebeann/Tobey.BepInEx.Timestamp/blob/main/LICENSE) |
 | [Tobey.FileTree](https://github.com/toebeann/Tobey.FileTree)                   | [LGPL-3.0](https://github.com/toebeann/Tobey.FileTree/blob/main/LICENSE)          |
