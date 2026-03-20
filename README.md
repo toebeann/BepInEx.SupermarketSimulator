@@ -68,7 +68,7 @@ That said, you may find some success if you are willing to use tools like CrossO
 
 1.  [Download Tobey's BepInEx Pack for Supermarket Simulator](https://github.com/toebeann/BepInEx.SupermarketSimulator/releases/latest/download/Tobey.s.BepInEx.Pack.for.Supermarket.Simulator.zip).
 2.  Make sure the game is not running.
-3.  Extract the contents of the downloaded archive into the game folder. Replace any files if prompted.\
+3.  Extract the contents of the downloaded archive into the game folder. Replace any files if prompted.
 
     **ℹ️** _That just means open the .zip file and drag-and-drop the files and folders out into the game folder!_
 
