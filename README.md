@@ -39,7 +39,7 @@ Unless otherwise stated, add-on packs (e.g. texture packs for TextureReplacer, p
 
 #### Windows
 
-Extract the .zip into the game folder replacing any files if prompted, run the game once to prepare the game for modding (it can take a while for the game to launch, be patient), then quit the game at the main menu and you're good to go. Remember to check the [Installing mods](#installing-mods) section below for info on how to install mods!
+Extract the .zip into the game folder replacing any files if prompted, run the game once to prepare the game for modding (it can take a couple of minutes before you will see anything happening, be patient), then quit the game at the main menu and you're good to go. Remember to check the [Installing mods](#installing-mods) section below for info on how to install mods!
 
 If something doesn't go according to plan or you need further guidance, please refer to the [full instructions](#full-instructions-for-windows-linux-and-steam-deck-handhelds) below. Don't worry, it looks harder than it is. **Please don't skimread!**
 
@@ -97,11 +97,13 @@ That said, you may find some success if you are willing to use tools like CrossO
 
 5. Run the game from Steam as normal.
 
-    **On first launch after installing this pack, it may take a while to load and you will not see any indication that anything is happening.**
+    **⚠️ _On first launch after installing this pack (or whenever the game updates), it can take a few minutes before you will see anything happening._**
 
-    This is normal, please be patient and wait - BepInEx is doing some work in the background to prepare the game for modding. This process will be much faster on subsequent launches of the game, although the "first launch" process may repeat whenever the game updates.
+    This is normal, please be patient and wait - BepInEx is doing some work in the background to prepare the game for modding. This process will be much faster on subsequent launches of the game, although the "first launch" process may repeat whenever the game updates. If you launched via Steam and it shows the game is running in your Steam library, just be patient with it and wait. For PC Game Pass, as long as you see the "Launching game..." window just wait.
 
-    If you get stuck here and you have installed a third-party antivirus, it could be interfering with the set up process, so check for that and if you think it's blocking BepInEx then look up how to set up exclusions for your antivirus in its documentation - you may need to set it to exclude the `BepInEx` > `unity-libs` folder, possibly also `BepInEx` > `core`.
+    **⚠️ _If on Steam it no longer shows the game as running or on PC Game Pass the "Launching game..." window disappears and the game doesn't launch, or it takes longer than a few minutes to start (depending on your hardware), you might have third-party antivirus software interfering._**
+
+    The necessary modding preparation BepInEx needs to do can sometimes get flagged by antivirus as suspicious, so check for that and if you think BepInEx is getting blocked then you'll want to look up how to set up folder exclusions in your antivirus software's documentation. The folders you'll want to exclude are `BepInEx` > `unity-libs` and possibly `BepInEx` > `core`. If your antivirus is very strict you may be better off setting an exclusion for the entire `BepInEx` folder, but be aware that any mods you install will not be getting scanned by your antivirus if you exclude the entire `BepInEx` folder, and I will not be held liable if you install a mod that carries a virus (most mods on Nexus Mods should be clean though, see [Virus Scanning at Nexus Mods](https://help.nexusmods.com/article/128-anti-virus-false-positives) for info).
 
 6. Exit the game at the main menu.
 
