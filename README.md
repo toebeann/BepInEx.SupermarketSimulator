@@ -6,10 +6,10 @@ This is a [BepInEx](https://github.com/BepInEx/BepInEx) pack for Supermarket Sim
 
 In particular, this pack comes with:
 
--   [Tobey's Game Info Logger for BepInEx](https://github.com/toebeann/Tobey.BepInEx.GameInfo), a simple BepInEx plugin to log information about the currently loaded Unity game,
--   [Tobey's File Tree Logger for BepInEx](https://github.com/toebeann/Tobey.FileTree), a configurable BepInEx plugin which logs the game's file tree to aid in troubleshooting issues,
--   [Tobey's Timestamp Logger for BepInEx](https://github.com/toebeann/Tobey.BepInEx.Timestamp), a configurable BepInEx patcher which logs the current timestamp, and
--   [yukieiji's UniverseLib fork](https://github.com/yukieiji/UniverseLib), a developer library for simple UI development, included so as to standardise the version used.
+- [Tobey's Game Info Logger for BepInEx](https://github.com/toebeann/Tobey.BepInEx.GameInfo), a simple BepInEx plugin to log information about the currently loaded Unity game,
+- [Tobey's File Tree Logger for BepInEx](https://github.com/toebeann/Tobey.FileTree), a configurable BepInEx plugin which logs the game's file tree to aid in troubleshooting issues,
+- [Tobey's Timestamp Logger for BepInEx](https://github.com/toebeann/Tobey.BepInEx.Timestamp), a configurable BepInEx patcher which logs the current timestamp, and
+- [yukieiji's UniverseLib fork](https://github.com/yukieiji/UniverseLib), a developer library for simple UI development, included so as to standardise the version used.
 
 ## IMPORTANT NOTES
 
@@ -65,16 +65,15 @@ That said, you may find some success if you are willing to use tools like CrossO
 >
 > PC Game Pass users can find this folder by right-clicking the game in their library, selecting `Manage`, navigating to the `Files` tab, clicking `Browse...` and finally navigating into the `Supermarket Simulator` > `Content` folder.
 
-1. [Download Tobey's BepInEx Pack for Supermarket Simulator](https://github.com/toebeann/BepInEx.SupermarketSimulator/releases/latest/download/Tobey.s.BepInEx.Pack.for.Supermarket.Simulator.zip).
-2. Make sure the game is not running.
-3. Extract the contents of the downloaded archive into the game folder. Replace any files if prompted.\
+1.  [Download Tobey's BepInEx Pack for Supermarket Simulator](https://github.com/toebeann/BepInEx.SupermarketSimulator/releases/latest/download/Tobey.s.BepInEx.Pack.for.Supermarket.Simulator.zip).
+2.  Make sure the game is not running.
+3.  Extract the contents of the downloaded archive into the game folder. Replace any files if prompted.\
 
     **ℹ️** _That just means open the .zip file and drag-and-drop the files and folders out into the game folder!_
 
     If done correctly, inside your game folder it should look something like this (the entries in bold being from the pack):
 
     **⚠️ _This list is used as a reference and is non-exhaustive, there will be other stuff, please don't delete anything!_**
-
     - _**`BepInEx`**_
     - `Supermarket Simulator_Data`
     - _**`doorstop_config.ini`**_
@@ -83,7 +82,7 @@ That said, you may find some success if you are willing to use tools like CrossO
 
     **⚠️ _If you are missing any of these files or folders, you are probably installing to the wrong place, and this pack will not work._**
 
-4. **Skip this step if you play on Windows!**
+4.  **Skip this step if you play on Windows!**
 
     Linux and Steam Deck handheld users: go to your Steam library, right-click the game, select `Properties...` and set the launch options:
 
@@ -95,7 +94,7 @@ That said, you may find some success if you are willing to use tools like CrossO
 
     **ℹ️** _If preferred, Linux users can instead set the Wine configuration (`winecfg`) for the game to add `winhttp` as a DLL override via the `Libraries` tab. Remove the launch options if applicable. [Full instructions here](https://docs.bepinex.dev/articles/advanced/proton_wine.html)._
 
-5. Run the game from Steam as normal.
+5.  Run the game from Steam as normal.
 
     **⚠️ _On first launch after installing this pack (or whenever the game updates), it can take a few minutes before you will see anything happening._**
 
@@ -105,7 +104,7 @@ That said, you may find some success if you are willing to use tools like CrossO
 
     The necessary modding preparation BepInEx needs to do can sometimes get flagged by antivirus as suspicious, so check for that and if you think BepInEx is getting blocked then you'll want to look up how to set up folder exclusions in your antivirus software's documentation. The folders you'll want to exclude are `BepInEx` > `unity-libs` and possibly `BepInEx` > `core`. If your antivirus is very strict you may be better off setting an exclusion for the entire `BepInEx` folder, but be aware that any mods you install will not be getting scanned by your antivirus if you exclude the entire `BepInEx` folder, and I will not be held liable if you install a mod that carries a virus (most mods on Nexus Mods should be clean though, see [Virus Scanning at Nexus Mods](https://help.nexusmods.com/article/128-anti-virus-false-positives) for info).
 
-6. Exit the game at the main menu.
+6.  Exit the game at the main menu.
 
 Assuming you have followed these instructions correctly, inside the `BepInEx` folder there will now be a file `LogOutput.log` (or simply `LogOutput` - it's the same thing). This is your log file, and it will be regenerated every time the game runs with technical and diagnostic information about your installed mods. It's very useful for troubleshooting, and it is recommended to share it whenever asking for help with your mods. It is equivalent to the console window you might be familiar with, containing all of the same information.
 
@@ -149,18 +148,18 @@ Second, check [the FAQ](https://github.com/toebeann/BepInEx.SupermarketSimulator
 
 If not, you can use the following channels to ask for help:
 
--   [Modded Supermarket Simulator Discord](https://discord.gg/hjGpjB3GXA)
--   [Nexus Mods posts tab](https://www.nexusmods.com/supermarketsimulator/mods/9/?tab=posts)
--   [GitHub issues](https://github.com/toebeann/BepInEx.SupermarketSimulator/issues)
+- [Modded Supermarket Simulator Discord](https://discord.gg/hjGpjB3GXA)
+- [Nexus Mods posts tab](https://www.nexusmods.com/supermarketsimulator/mods/9/?tab=posts)
+- [GitHub issues](https://github.com/toebeann/BepInEx.SupermarketSimulator/issues)
 
 ## Useful links for mod authors
 
--   [Doorstop: debugging Unity IL2CPP games](https://github.com/NeighTools/UnityDoorstop#debugging-in-il2cpp)
--   [BepInEx: writing basic plugin walkthrough](https://docs.bepinex.dev/master/articles/dev_guide/plugin_tutorial/index.html)
--   [BepInEx: useful plugins for modding](https://docs.bepinex.dev/master/articles/dev_guide/dev_tools.html)
--   [BepInEx: patching game methods at runtime](https://docs.bepinex.dev/master/articles/dev_guide/runtime_patching.html)
--   [UniverseLib: wiki](https://github.com/sinai-dev/UniverseLib/wiki/Initialization)
--   [Modded Supermarket Simulator Discord](https://discord.gg/hjGpjB3GXA)
+- [Doorstop: debugging Unity IL2CPP games](https://github.com/NeighTools/UnityDoorstop#debugging-in-il2cpp)
+- [BepInEx: writing basic plugin walkthrough](https://docs.bepinex.dev/master/articles/dev_guide/plugin_tutorial/index.html)
+- [BepInEx: useful plugins for modding](https://docs.bepinex.dev/master/articles/dev_guide/dev_tools.html)
+- [BepInEx: patching game methods at runtime](https://docs.bepinex.dev/master/articles/dev_guide/runtime_patching.html)
+- [UniverseLib: wiki](https://github.com/sinai-dev/UniverseLib/wiki/Initialization)
+- [Modded Supermarket Simulator Discord](https://discord.gg/hjGpjB3GXA)
 
 ## Licensing
 
