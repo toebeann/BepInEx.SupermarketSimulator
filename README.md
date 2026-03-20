@@ -131,6 +131,8 @@ Otherwise, you can now install mods according to the [Installing mods](#installi
 > Since v1.1 of Supermarket Simulator, MelonLoader is no longer compatible with BepInEx, which means that mods made for MelonLoader are incompatible with mods made for BepInEx. Moving forward, we hope that all mod authors for Supermarket Simulator migrate to BepInEx, which the majority already are using.
 >
 > If you do choose to install MelonLoader, be aware that any BepInEx mods you have installed will stop working until you uninstall MelonLoader.
+>
+> If a mod mentions "BepInEx x MelonLoader", check the update date of the mod and if it's been updated since October 8th 2025 it's probably fine. "Tobey's BepInEx x MelonLoader Pack for Supermarket Simulator" is what this BepInEx pack used to be called when MelonLoader mods were supported.
 
 Installing BepInEx mods is generally as simple as opening up their .zip and dragging their contents into the right folder.
 
