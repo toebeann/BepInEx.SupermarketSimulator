@@ -52,7 +52,7 @@ For Steam Deck handhelds, switch to Desktop mode to follow the instructions. Onc
 
 #### macOS
 
-Sadly, after much testing, I have not been able to find a way to get mods to load with the native macOS copy of the game since Supermarket Simulator v1.1 released. While BepInEx and MelonLoader do both have IL2CPP builds for macOS, neither seem to work with this game. I have discussed with some of the maintainers of these mod loaders and at this time it seems that it is an issue that will not be resolved for the foreseeable future. This means that unfortunately, if you're playing a macOS copy of the game, you're out of luck.
+Sadly, after much testing, I have not been able to find a way to get mods to load with the native macOS copy of the game since Supermarket Simulator v1.1 released. While BepInEx and MelonLoader do both have IL2CPP builds for macOS, neither seem to work with this game. I have discussed with some of the maintainers of these mod loaders and at this time it seems that it is an issue that cannot be resolved due to technical limitations. This means that unfortunately, if you're playing a macOS copy of the game, you're out of luck.
 
 That said, you may find some success if you are willing to use tools like CrossOver or HyperPlay to install a Windows copy of Steam and the game, and then configure your bottle with the environment variable `WINEDLLOVERRIDES="winhttp=n,b"` or modify its Wine Configuration to add `winhttp` as an override in the **Libraries** tab. Please note that I offer no support for this.
 
